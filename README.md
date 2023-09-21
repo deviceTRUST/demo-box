@@ -70,7 +70,7 @@ In a lab as simple as the Demo-Box, you will want to demonstrate several use cas
 
 Our Demo-Box is designed to work with the Demo-Tool. Please start the Demo-Tool before you connect to the Demo-Box via RDP. You'll otherwise end up with a bunch of Pop-Ups.
 
-These Use Cases are part of the Demo-Tool
+These Use Cases are integrated in the Demo-Tool
 
 | **Element** | **Screenshot** |
 | ----------- | -------------- |
