@@ -72,7 +72,22 @@ A valid license is required and needs to be added to the configuration before yo
 
 ## Demo-Tool
 
+In a lab as simple as the Demo-Box, you will want to demonstrate several use cases, while not making too much fuzz or being able to change parameters like your location. The deviceTRUST Demo-Tools allows you to simulate certain property changes with a simple click. It is designed to give insight into what can be achieved with deviceTRUST - in a very simple way.
 
+Our Demo-Box is designed to work with the Demo-Tool. Please start the Demo-Tool before you connect to the Demo-Box via RDP. You'll otherwise end up with a bunch of Pop-Ups. 
+
+These Use Cases are part of the Demo-Tool
+
+- Conditional Workspace Access: Allows or disallows access to the user's session on the Demo-Box based on either the Security State or connected USB Sticks.
+
+- Conditional Application Access: Closes example applications (Wordpad or Notepad++) inside the user's session based on the device's network connection or location.
+
+- Conditional Configuration: Maps printers according to the user's location or controls the session's screensaver based on the device's configuration.
+
+|--|--|
+| Conditional Workspace Access: | <img src="./sources/images/licensing_01_start-console.png" alt="Start the deviceTRUST Console" width="300">|
+
+## Additional Use Cases
 
 ## Support / Contribution / Feedback
 
