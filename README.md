@@ -84,7 +84,8 @@ These Use Cases are part of the Demo-Tool
 
 - Conditional Configuration: Maps printers according to the user's location or controls the session's screensaver based on the device's configuration.
 
-|--|--|
+| Element | Screenshot |
+| ------- | ---------- |
 | Conditional Workspace Access: | <img src="./sources/images/licensing_01_start-console.png" alt="Start the deviceTRUST Console" width="300">|
 
 ## Additional Use Cases
