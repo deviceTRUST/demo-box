@@ -12,7 +12,7 @@ The deviceTRUST Demo-Box comes with our deviceTRUST Demo-Tool. The Demo-Tool is 
 
 ## Before you start
 
-- Client Prerequisites: For now, the Demo-Box is only usable with a Windows based client. Our Demo-Tool can only be executed on Windows based devices and is required for utilizing the Demo-Box.
+- Client Prerequisites: For now, the Demo-Box is only usable with a Windows based client. Our Demo-Tool can only be executed on Windows devices and is required for utilizing the Demo-Box.
 
 - VM Prerequisites
 
@@ -34,7 +34,7 @@ The script will install everything required for your Demo-Box implementation. Yo
 
 ## License
 
-A valid license is required and needs to be added to the configuration before you can use the Demo-Box. Feel free to use your existing customer or NFR license. If you do not have a license you can use here, feel free to check out our community program (devicetrust.com/community) or request an evaluation license on our website: devicetrust.com/test-the-software.
+A valid license is required and needs to be added to the configuration before you can use the Demo-Box. Feel free to use your existing customer or NFR license. If you do not have a license you can use here, [check out our community program](devicetrust.com/community) or [request an evaluation license](devicetrust.com/test-the-software) on our website.
 
 | Element | Screenshot |
 | ------- | ---------- |
