@@ -40,11 +40,11 @@ The script will install everything required for your Demo-Box implementation. Yo
 
 ## License
 
-A valid license is required and needs to be added to the configuration before you can use the Demo-Box. Feel free to use your existing customer or NFR license. If you do not have a license you can use here, feel free to check out our community program (devicetrust.com/community) or request an evaluation licens on our website: devicetrust.com/test-the-software.
-```
+A valid license is required and needs to be added to the configuration before you can use the Demo-Box. Feel free to use your existing customer or NFR license. If you do not have a license you can use here, feel free to check out our community program (devicetrust.com/community) or request an evaluation license on our website: devicetrust.com/test-the-software.
+
 - To add the license into the deviceTRUST policy open the deviceTRUST Console from the start menu.
 <img src="./sources/images/licensing_01_start-console.png" alt="Start the deviceTRUST Console" width="300">
-```
+
 - Select "Open Local Policy"
 <img src="./sources/images/licensing_02_open-policy.png" alt="Open Local Policy" width="300">
 
@@ -71,6 +71,8 @@ A valid license is required and needs to be added to the configuration before yo
   - The Subfolder “Presentation” contains the deviceTRUST corporate slide deck in English and German language.
 
 ## Demo-Tool
+
+
 
 ## Support / Contribution / Feedback
 
