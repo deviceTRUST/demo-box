@@ -1,0 +1,2561 @@
+{
+   "contexts": [
+      {
+         "id": "eb1effad-20bd-44f8-93fb-a0f6d57b3852",
+         "key": "CONTEXT_DEMO_COUNTRY",
+         "name": "Demo Country",
+         "description": "Defines a demo value representing the country of the remote device.",
+         "mode": "Left-Most Path",
+         "defaultState": "Unauthorized",
+         "enabled": true,
+         "data": [
+            {
+               "state": "Authorized",
+               "conditions": [
+                  {
+                     "id": "921d90b5-2abb-4397-8457-27c44daaa47b",
+                     "categoryName": "Windows Registry",
+                     "propertyName": "Value",
+                     "propertyValue": 3,
+                     "underlyingPropertyName": "TARGET_WINDOWSREGISTRY_X_VALUE",
+                     "operator": "String Equals (Wildcard)",
+                     "value": {
+                        "type": "String",
+                        "data": [
+                           {
+                              "path": "HKCU\\Software\\deviceTRUST Demo Tool",
+                              "value": "DEMO_COUNTRY_VALUE",
+                              "monitor": true,
+                              "protectedOnly": false,
+                              "data": [
+                                 "Authorized"
+                              ]
+                           }
+                        ]
+                     },
+                     "target": "Remote",
+                     "isArrayIndexed": true,
+                     "sameAsParent": false,
+                     "isDelimitedArray": false
+                  }
+               ]
+            }
+         ],
+         "protection": "Text",
+         "persistToEventLog": true,
+         "persistToRegistry": true,
+         "persistToEnvironment": true,
+         "persistToCommandPrompt": true
+      },
+      {
+         "id": "3b619f2d-99df-431c-96f0-73a41f890007",
+         "key": "CONTEXT_DEMO_DEVICE_PLACEMENT",
+         "name": "Demo Device Placement",
+         "description": "Defines a demo value representing the placement of the remote device within a building.",
+         "mode": "Left-Most Path",
+         "defaultState": "Unknown",
+         "enabled": true,
+         "data": [
+            {
+               "state": "Floor 1",
+               "conditions": [
+                  {
+                     "id": "9c1cc792-efa9-4ff7-af02-a341f5406a66",
+                     "categoryName": "Windows Registry",
+                     "propertyName": "Value",
+                     "propertyValue": 3,
+                     "underlyingPropertyName": "TARGET_WINDOWSREGISTRY_X_VALUE",
+                     "operator": "String Equals (Wildcard)",
+                     "value": {
+                        "type": "String",
+                        "data": [
+                           {
+                              "path": "HKCU\\Software\\deviceTRUST Demo Tool",
+                              "value": "DEMO_DEVICE_PLACEMENT_VALUE",
+                              "monitor": true,
+                              "protectedOnly": false,
+                              "data": [
+                                 "Floor 1"
+                              ]
+                           }
+                        ]
+                     },
+                     "target": "Remote",
+                     "isArrayIndexed": true,
+                     "sameAsParent": false,
+                     "isDelimitedArray": false
+                  }
+               ]
+            },
+            {
+               "state": "Floor 2",
+               "conditions": [
+                  {
+                     "id": "aab3cb95-55e3-46b5-aea1-26d1eb4153af",
+                     "categoryName": "Windows Registry",
+                     "propertyName": "Value",
+                     "propertyValue": 3,
+                     "underlyingPropertyName": "TARGET_WINDOWSREGISTRY_X_VALUE",
+                     "operator": "String Equals (Wildcard)",
+                     "value": {
+                        "type": "String",
+                        "data": [
+                           {
+                              "path": "HKCU\\Software\\deviceTRUST Demo Tool",
+                              "value": "DEMO_DEVICE_PLACEMENT_VALUE",
+                              "monitor": true,
+                              "protectedOnly": false,
+                              "data": [
+                                 "Floor 2"
+                              ]
+                           }
+                        ]
+                     },
+                     "target": "Remote",
+                     "isArrayIndexed": true,
+                     "sameAsParent": false,
+                     "isDelimitedArray": false
+                  }
+               ]
+            }
+         ],
+         "protection": "Text",
+         "persistToEventLog": true,
+         "persistToRegistry": true,
+         "persistToEnvironment": true,
+         "persistToCommandPrompt": true
+      },
+      {
+         "id": "7e15b9af-03a9-4a7e-9ec1-ce0ea99a74e3",
+         "key": "CONTEXT_DEMO_POLICY_MODE",
+         "name": "Demo Policy Mode",
+         "description": "Defines a demo value representing the policy mode.",
+         "mode": "Left-Most Path",
+         "defaultState": "Notify",
+         "enabled": true,
+         "data": [
+            {
+               "state": "Enforce",
+               "conditions": [
+                  {
+                     "id": "7b8936f1-75c0-48b5-90c0-77d3fe01bdfd",
+                     "categoryName": "Windows Registry",
+                     "propertyName": "Value",
+                     "propertyValue": 3,
+                     "underlyingPropertyName": "TARGET_WINDOWSREGISTRY_X_VALUE",
+                     "operator": "String Equals (Wildcard)",
+                     "value": {
+                        "type": "String",
+                        "data": [
+                           {
+                              "path": "HKCU\\Software\\deviceTRUST Demo Tool",
+                              "value": "DEMO_POLICY_MODE",
+                              "monitor": true,
+                              "protectedOnly": false,
+                              "data": [
+                                 "Enforce"
+                              ]
+                           }
+                        ]
+                     },
+                     "target": "Remote",
+                     "isArrayIndexed": true,
+                     "sameAsParent": false,
+                     "isDelimitedArray": false
+                  }
+               ]
+            }
+         ],
+         "protection": "Text",
+         "persistToEventLog": true,
+         "persistToRegistry": true,
+         "persistToEnvironment": true,
+         "persistToCommandPrompt": true
+      },
+      {
+         "id": "8b7e8202-712c-4e55-a5a4-661395ed7a21",
+         "key": "CONTEXT_DEMO_SECURE_SCREEN_SAVER",
+         "name": "Demo Secure Screen Saver",
+         "description": "Defines a demo value representing whether the screen saver is secure on the remote device.",
+         "mode": "Left-Most Path",
+         "defaultState": "False",
+         "enabled": true,
+         "data": [
+            {
+               "state": "True",
+               "conditions": [
+                  {
+                     "id": "56fce41e-12f4-4be7-a673-66859fe453e8",
+                     "categoryName": "Windows Registry",
+                     "propertyName": "Value",
+                     "propertyValue": 3,
+                     "underlyingPropertyName": "TARGET_WINDOWSREGISTRY_X_VALUE",
+                     "operator": "String Equals (Wildcard)",
+                     "value": {
+                        "type": "String",
+                        "data": [
+                           {
+                              "path": "HKCU\\Software\\deviceTRUST Demo Tool",
+                              "value": "DEMO_SECURE_SCREEN_SAVER_VALUE",
+                              "monitor": true,
+                              "protectedOnly": false,
+                              "data": [
+                                 "True"
+                              ]
+                           }
+                        ]
+                     },
+                     "target": "Remote",
+                     "isArrayIndexed": true,
+                     "sameAsParent": false,
+                     "isDelimitedArray": false
+                  }
+               ]
+            }
+         ],
+         "protection": "Text",
+         "persistToEventLog": true,
+         "persistToRegistry": true,
+         "persistToEnvironment": true,
+         "persistToCommandPrompt": true
+      },
+      {
+         "id": "f5fb7974-d4e7-4083-ab19-868ee9f49564",
+         "key": "CONTEXT_DEMO_SECURITY_STATE",
+         "name": "Demo Security State",
+         "description": "Defines a demo value representing the security state of the remote device.",
+         "mode": "Left-Most Path",
+         "defaultState": "No Client",
+         "enabled": true,
+         "data": [
+            {
+               "state": "Protected",
+               "conditions": [
+                  {
+                     "id": "29b001c9-ca17-42dc-8e30-be61dc5478cc",
+                     "categoryName": "Windows Registry",
+                     "propertyName": "Value",
+                     "propertyValue": 3,
+                     "underlyingPropertyName": "TARGET_WINDOWSREGISTRY_X_VALUE",
+                     "operator": "String Equals (Wildcard)",
+                     "value": {
+                        "type": "String",
+                        "data": [
+                           {
+                              "path": "HKCU\\Software\\deviceTRUST Demo Tool",
+                              "value": "DEMO_SECURITY_STATE_VALUE",
+                              "monitor": true,
+                              "protectedOnly": false,
+                              "data": [
+                                 "Protected"
+                              ]
+                           }
+                        ]
+                     },
+                     "target": "Remote",
+                     "isArrayIndexed": true,
+                     "sameAsParent": false,
+                     "isDelimitedArray": false
+                  }
+               ]
+            },
+            {
+               "state": "Unprotected",
+               "conditions": [
+                  {
+                     "id": "d685aa10-5339-42a2-9664-7fcd2561766c",
+                     "categoryName": "Windows Registry",
+                     "propertyName": "Value",
+                     "propertyValue": 3,
+                     "underlyingPropertyName": "TARGET_WINDOWSREGISTRY_X_VALUE",
+                     "operator": "String Equals (Wildcard)",
+                     "value": {
+                        "type": "String",
+                        "data": [
+                           {
+                              "path": "HKCU\\Software\\deviceTRUST Demo Tool",
+                              "value": "DEMO_SECURITY_STATE_VALUE",
+                              "monitor": true,
+                              "protectedOnly": false,
+                              "data": [
+                                 "Unprotected"
+                              ]
+                           }
+                        ]
+                     },
+                     "target": "Remote",
+                     "isArrayIndexed": true,
+                     "sameAsParent": false,
+                     "isDelimitedArray": false
+                  }
+               ]
+            }
+         ],
+         "protection": "Text",
+         "persistToEventLog": true,
+         "persistToRegistry": true,
+         "persistToEnvironment": true,
+         "persistToCommandPrompt": true
+      },
+      {
+         "id": "a911144a-5173-4b13-87b7-497e843bd339",
+         "key": "CONTEXT_DEMO_UNAUTHORIZED_USB_DRIVES",
+         "name": "Demo Unauthorized USB Drives",
+         "description": "Defines a demo value representing whether an unauthorized USB drive is plugged into the remote device.",
+         "mode": "Left-Most Path",
+         "defaultState": "True",
+         "enabled": true,
+         "data": [
+            {
+               "state": "False",
+               "conditions": [
+                  {
+                     "id": "f9bc8953-5a4f-4a85-b96a-91365c884fa2",
+                     "categoryName": "Windows Registry",
+                     "propertyName": "Value",
+                     "propertyValue": 3,
+                     "underlyingPropertyName": "TARGET_WINDOWSREGISTRY_X_VALUE",
+                     "operator": "String Equals (Wildcard)",
+                     "value": {
+                        "type": "String",
+                        "data": [
+                           {
+                              "path": "HKCU\\Software\\deviceTRUST Demo Tool",
+                              "value": "DEMO_UNAUTHORIZED_USB_DRIVES_VALUE",
+                              "monitor": true,
+                              "protectedOnly": false,
+                              "data": [
+                                 "False"
+                              ]
+                           }
+                        ]
+                     },
+                     "target": "Remote",
+                     "isArrayIndexed": true,
+                     "sameAsParent": false,
+                     "isDelimitedArray": false
+                  }
+               ]
+            }
+         ],
+         "protection": "Text",
+         "persistToEventLog": true,
+         "persistToRegistry": true,
+         "persistToEnvironment": true,
+         "persistToCommandPrompt": true
+      },
+      {
+         "id": "062386f4-c902-432b-9aea-15f7a3e3e22d",
+         "key": "CONTEXT_DEMO_WI_FI_SECURITY_MODE",
+         "name": "Demo Wi-Fi Security Mode",
+         "description": "Defines a demo value representing whether the remote device is connected to a secure WiFi network.",
+         "mode": "Left-Most Path",
+         "defaultState": "Insecure",
+         "enabled": true,
+         "data": [
+            {
+               "state": "Secure",
+               "conditions": [
+                  {
+                     "id": "aac9283f-c05c-40c9-aeb2-68a435ecdcf3",
+                     "categoryName": "Windows Registry",
+                     "propertyName": "Value",
+                     "propertyValue": 3,
+                     "underlyingPropertyName": "TARGET_WINDOWSREGISTRY_X_VALUE",
+                     "operator": "String Equals (Wildcard)",
+                     "value": {
+                        "type": "String",
+                        "data": [
+                           {
+                              "path": "HKCU\\Software\\deviceTRUST Demo Tool",
+                              "value": "DEMO_WIFI_SECURITY_MODE_VALUE",
+                              "monitor": true,
+                              "protectedOnly": false,
+                              "data": [
+                                 "Secure"
+                              ]
+                           }
+                        ]
+                     },
+                     "target": "Remote",
+                     "isArrayIndexed": true,
+                     "sameAsParent": false,
+                     "isDelimitedArray": false
+                  }
+               ]
+            }
+         ],
+         "protection": "Text",
+         "persistToEventLog": true,
+         "persistToRegistry": true,
+         "persistToEnvironment": true,
+         "persistToCommandPrompt": true
+      },
+      {
+         "id": "4fc0625f-659e-48e3-b694-1bc52c824c18",
+         "key": "CONTEXT_PROCESS_STATE_SNIPPINGTOOL",
+         "name": "Process State - SnippingTool ",
+         "description": "",
+         "mode": "Left-Most Path",
+         "defaultState": "Stopped",
+         "enabled": true,
+         "data": [
+            {
+               "state": "Running",
+               "conditions": [
+                  {
+                     "id": "8b0646b2-eefb-49b9-96d7-039501240a67",
+                     "categoryName": "Custom",
+                     "propertyName": "Condition",
+                     "propertyValue": 1,
+                     "underlyingPropertyName": "TARGET_CUSTOM_CONDITION",
+                     "operator": "String Equals (Wildcard)",
+                     "value": {
+                        "type": "String",
+                        "data": [
+                           {
+                              "property": "%REMOTE_CUSTOM_SNIP_RUNNING%",
+                              "data": [
+                                 "True"
+                              ]
+                           }
+                        ]
+                     },
+                     "target": "Local",
+                     "isArrayIndexed": false,
+                     "sameAsParent": false,
+                     "isDelimitedArray": true
+                  }
+               ]
+            }
+         ],
+         "protection": "Text",
+         "persistToEventLog": true,
+         "persistToRegistry": true,
+         "persistToEnvironment": true,
+         "persistToCommandPrompt": true
+      },
+      {
+         "id": "5cdf6434-78db-4ecc-8008-d15cd982c620",
+         "key": "CONTEXT_PROCESS_STATE_ZOOM",
+         "name": "Process State - Zoom",
+         "description": "",
+         "mode": "Left-Most Path",
+         "defaultState": "Stopped",
+         "enabled": true,
+         "data": [
+            {
+               "state": "Running",
+               "conditions": [
+                  {
+                     "id": "e594ec86-12ba-4fdd-adff-d6fa469eeff9",
+                     "categoryName": "Custom",
+                     "propertyName": "Condition",
+                     "propertyValue": 1,
+                     "underlyingPropertyName": "TARGET_CUSTOM_CONDITION",
+                     "operator": "String Equals (Wildcard)",
+                     "value": {
+                        "type": "String",
+                        "data": [
+                           {
+                              "property": "%REMOTE_CUSTOM_ZOOM_RUNNING%",
+                              "data": [
+                                 "True"
+                              ]
+                           }
+                        ]
+                     },
+                     "target": "Local",
+                     "isArrayIndexed": false,
+                     "sameAsParent": false,
+                     "isDelimitedArray": true
+                  }
+               ]
+            }
+         ],
+         "protection": "Text",
+         "persistToEventLog": true,
+         "persistToRegistry": true,
+         "persistToEnvironment": true,
+         "persistToCommandPrompt": true
+      },
+      {
+         "id": "1098f6c9-8412-4aac-91ba-aa54672fc34d",
+         "key": "CONTEXT_SECURITY_STATE",
+         "name": "Security State",
+         "description": "Defines the security state of the remote device.",
+         "mode": "Left-Most Path",
+         "defaultState": "Unavailable",
+         "enabled": true,
+         "data": [
+            {
+               "state": "Protected",
+               "conditions": [
+                  {
+                     "id": "fa4505f0-fc00-4a81-a0f1-8f14ed902522",
+                     "categoryName": "deviceTRUST",
+                     "propertyName": "Connected",
+                     "propertyValue": 2,
+                     "underlyingPropertyName": "TARGET_DEVICETRUST_CONNECTED",
+                     "operator": "Boolean Equals",
+                     "value": {
+                        "type": "Boolean",
+                        "data": [
+                           true
+                        ]
+                     },
+                     "target": "Local",
+                     "isArrayIndexed": false,
+                     "sameAsParent": false,
+                     "isDelimitedArray": false,
+                     "branches": [
+                        {
+                           "state": "Protected",
+                           "conditions": [
+                              {
+                                 "id": "5ba5feef-ec99-482a-b539-2fdb75698d78",
+                                 "categoryName": "OS",
+                                 "propertyName": "Name",
+                                 "propertyValue": 1,
+                                 "underlyingPropertyName": "TARGET_OS_NAME",
+                                 "operator": "Enum Equals",
+                                 "value": {
+                                    "type": "Enum",
+                                    "data": [
+                                       "macOS"
+                                    ]
+                                 },
+                                 "target": "Remote",
+                                 "isArrayIndexed": false,
+                                 "sameAsParent": false,
+                                 "isDelimitedArray": false
+                              },
+                              {
+                                 "id": "c46f0d1f-4767-4832-9ed1-a55344bb5093",
+                                 "categoryName": "Security Product",
+                                 "propertyName": "Category",
+                                 "propertyValue": 11,
+                                 "underlyingPropertyName": "TARGET_SECURITYPRODUCT_X_CATEGORY",
+                                 "operator": "Enum Equals",
+                                 "value": {
+                                    "type": "Enum",
+                                    "data": [
+                                       "Firewall"
+                                    ]
+                                 },
+                                 "target": "Remote",
+                                 "isArrayIndexed": true,
+                                 "sameAsParent": false,
+                                 "isDelimitedArray": false
+                              },
+                              {
+                                 "id": "f7b42b2b-1642-4144-8af2-d5d09ad0894a",
+                                 "categoryName": "Security Product",
+                                 "propertyName": "Status",
+                                 "propertyValue": 12,
+                                 "underlyingPropertyName": "TARGET_SECURITYPRODUCT_X_STATUS",
+                                 "operator": "Enum Equals",
+                                 "value": {
+                                    "type": "Enum",
+                                    "data": [
+                                       "Active"
+                                    ]
+                                 },
+                                 "target": "Remote",
+                                 "isArrayIndexed": true,
+                                 "sameAsParent": true,
+                                 "isDelimitedArray": true
+                              }
+                           ]
+                        },
+                        {
+                           "state": "Protected",
+                           "conditions": [
+                              {
+                                 "id": "4c277c2d-1ecc-44f7-889f-f73a00bb2965",
+                                 "categoryName": "OS",
+                                 "propertyName": "Name",
+                                 "propertyValue": 1,
+                                 "underlyingPropertyName": "TARGET_OS_NAME",
+                                 "operator": "Enum Equals",
+                                 "value": {
+                                    "type": "Enum",
+                                    "data": [
+                                       "IGEL"
+                                    ]
+                                 },
+                                 "target": "Remote",
+                                 "isArrayIndexed": false,
+                                 "sameAsParent": false,
+                                 "isDelimitedArray": false
+                              },
+                              {
+                                 "id": "698a6489-15c3-4fcb-9862-7fc919614eed",
+                                 "categoryName": "IGEL",
+                                 "propertyName": "UMS Server",
+                                 "propertyValue": 2,
+                                 "underlyingPropertyName": "TARGET_IGEL_UMS_SERVER",
+                                 "operator": "String Equals (Wildcard)",
+                                 "value": {
+                                    "type": "String",
+                                    "data": [
+                                       "UMS_SERVER_IP:30001"
+                                    ]
+                                 },
+                                 "target": "Remote",
+                                 "isArrayIndexed": false,
+                                 "sameAsParent": false,
+                                 "isDelimitedArray": false
+                              },
+                              {
+                                 "id": "7e610728-d66b-4fb5-ab36-874efe2f39f7",
+                                 "categoryName": "IGEL",
+                                 "propertyName": "UMS Cert Serial",
+                                 "propertyValue": 3,
+                                 "underlyingPropertyName": "TARGET_IGEL_UMS_CERTIFICATE_SERIALNUMBER",
+                                 "operator": "String Equals (Wildcard)",
+                                 "value": {
+                                    "type": "String",
+                                    "data": [
+                                       "UMS_CERTIFICATE_SERIAL"
+                                    ]
+                                 },
+                                 "target": "Remote",
+                                 "isArrayIndexed": false,
+                                 "sameAsParent": false,
+                                 "isDelimitedArray": false
+                              }
+                           ]
+                        },
+                        {
+                           "state": "Protected",
+                           "conditions": [
+                              {
+                                 "id": "8ef4a468-8153-45fa-8fc1-45bd55e43996",
+                                 "categoryName": "OS",
+                                 "propertyName": "Name",
+                                 "propertyValue": 1,
+                                 "underlyingPropertyName": "TARGET_OS_NAME",
+                                 "operator": "Enum Equals",
+                                 "value": {
+                                    "type": "Enum",
+                                    "data": [
+                                       "eLux"
+                                    ]
+                                 },
+                                 "target": "Remote",
+                                 "isArrayIndexed": false,
+                                 "sameAsParent": false,
+                                 "isDelimitedArray": false
+                              },
+                              {
+                                 "id": "6d5f420c-524a-4ff8-a489-920a2ac84905",
+                                 "categoryName": "eLux",
+                                 "propertyName": "Scout Name",
+                                 "propertyValue": 6,
+                                 "underlyingPropertyName": "TARGET_ELUX_SCOUT_NAME",
+                                 "operator": "String Equals (Wildcard)",
+                                 "value": {
+                                    "type": "String",
+                                    "data": [
+                                       "SCOUT_NAME"
+                                    ]
+                                 },
+                                 "target": "Remote",
+                                 "isArrayIndexed": false,
+                                 "sameAsParent": false,
+                                 "isDelimitedArray": false
+                              },
+                              {
+                                 "id": "30fd18ce-129d-4724-872f-3d3c35f0a77b",
+                                 "categoryName": "eLux",
+                                 "propertyName": "Scout Cert Serial",
+                                 "propertyValue": 9,
+                                 "underlyingPropertyName": "TARGET_ELUX_SCOUT_CERTIFICATE_SERIALNUMBER",
+                                 "operator": "String Equals (Wildcard)",
+                                 "value": {
+                                    "type": "String",
+                                    "data": [
+                                       "SCOUT_CERTIFICATE_SERIAL"
+                                    ]
+                                 },
+                                 "target": "Remote",
+                                 "isArrayIndexed": false,
+                                 "sameAsParent": false,
+                                 "isDelimitedArray": false
+                              }
+                           ]
+                        },
+                        {
+                           "state": "Protected",
+                           "conditions": [
+                              {
+                                 "id": "ef8f6c9a-866b-4558-8576-b879dc6d2090",
+                                 "categoryName": "OS",
+                                 "propertyName": "Name",
+                                 "propertyValue": 1,
+                                 "underlyingPropertyName": "TARGET_OS_NAME",
+                                 "operator": "Enum Equals",
+                                 "value": {
+                                    "type": "Enum",
+                                    "data": [
+                                       "iOS"
+                                    ]
+                                 },
+                                 "target": "Remote",
+                                 "isArrayIndexed": false,
+                                 "sameAsParent": false,
+                                 "isDelimitedArray": false
+                              },
+                              {
+                                 "id": "a92f87cc-0272-41d9-a92b-b69fbea65d57",
+                                 "categoryName": "iOS",
+                                 "propertyName": "Jailbroken",
+                                 "propertyValue": 3,
+                                 "underlyingPropertyName": "TARGET_IOS_JAILBROKEN",
+                                 "operator": "Boolean Equals",
+                                 "value": {
+                                    "type": "Boolean",
+                                    "data": [
+                                       false
+                                    ]
+                                 },
+                                 "target": "Remote",
+                                 "isArrayIndexed": false,
+                                 "sameAsParent": false,
+                                 "isDelimitedArray": false
+                              }
+                           ]
+                        },
+                        {
+                           "state": "Unprotected",
+                           "conditions": []
+                        }
+                     ]
+                  },
+                  {
+                     "id": "1630fdaf-1a0e-4e42-a00f-ea4264bf9abd",
+                     "categoryName": "OS",
+                     "propertyName": "Name",
+                     "propertyValue": 1,
+                     "underlyingPropertyName": "TARGET_OS_NAME",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Windows"
+                        ]
+                     },
+                     "target": "Remote",
+                     "isArrayIndexed": false,
+                     "sameAsParent": false,
+                     "isDelimitedArray": false,
+                     "branches": [
+                        {
+                           "state": "Protected",
+                           "conditions": [
+                              {
+                                 "id": "e5968dc9-6efd-4004-84ab-938f04115033",
+                                 "categoryName": "Security Product",
+                                 "propertyName": "Category",
+                                 "propertyValue": 11,
+                                 "underlyingPropertyName": "TARGET_SECURITYPRODUCT_X_CATEGORY",
+                                 "operator": "Enum Equals",
+                                 "value": {
+                                    "type": "Enum",
+                                    "data": [
+                                       "AntiVirus"
+                                    ]
+                                 },
+                                 "target": "Remote",
+                                 "isArrayIndexed": true,
+                                 "sameAsParent": false,
+                                 "isDelimitedArray": false
+                              },
+                              {
+                                 "id": "81f46790-3252-4951-807b-decf48c84527",
+                                 "categoryName": "Security Product",
+                                 "propertyName": "Status",
+                                 "propertyValue": 12,
+                                 "underlyingPropertyName": "TARGET_SECURITYPRODUCT_X_STATUS",
+                                 "operator": "Enum Equals",
+                                 "value": {
+                                    "type": "Enum",
+                                    "data": [
+                                       "Active"
+                                    ]
+                                 },
+                                 "target": "Remote",
+                                 "isArrayIndexed": true,
+                                 "sameAsParent": true,
+                                 "isDelimitedArray": true
+                              },
+                              {
+                                 "id": "6e28fe79-6be8-49be-88f1-5ed27ad7f6b5",
+                                 "categoryName": "Security Product",
+                                 "propertyName": "Category",
+                                 "propertyValue": 11,
+                                 "underlyingPropertyName": "TARGET_SECURITYPRODUCT_X_CATEGORY",
+                                 "operator": "Enum Equals",
+                                 "value": {
+                                    "type": "Enum",
+                                    "data": [
+                                       "Firewall"
+                                    ]
+                                 },
+                                 "target": "Remote",
+                                 "isArrayIndexed": true,
+                                 "sameAsParent": false,
+                                 "isDelimitedArray": false
+                              },
+                              {
+                                 "id": "b0e9ad29-9fa5-4d42-ad37-95ff91fd4ba7",
+                                 "categoryName": "Security Product",
+                                 "propertyName": "Status",
+                                 "propertyValue": 12,
+                                 "underlyingPropertyName": "TARGET_SECURITYPRODUCT_X_STATUS",
+                                 "operator": "Enum Equals",
+                                 "value": {
+                                    "type": "Enum",
+                                    "data": [
+                                       "Active"
+                                    ]
+                                 },
+                                 "target": "Remote",
+                                 "isArrayIndexed": true,
+                                 "sameAsParent": true,
+                                 "isDelimitedArray": true
+                              }
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "id": "c1446f9a-7046-4349-8a55-c8d0331babe0",
+                     "categoryName": "Windows Defender",
+                     "propertyName": "Status",
+                     "propertyValue": 1,
+                     "underlyingPropertyName": "TARGET_WINDOWSDEFENDER_STATUS",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Active"
+                        ]
+                     },
+                     "target": "Remote",
+                     "isArrayIndexed": false,
+                     "sameAsParent": false,
+                     "isDelimitedArray": false
+                  },
+                  {
+                     "id": "b28ed149-7a39-4b77-a32a-5fd34c90edb2",
+                     "categoryName": "Windows Defender",
+                     "propertyName": "Real-Time Protection",
+                     "propertyValue": 12,
+                     "underlyingPropertyName": "TARGET_WINDOWSDEFENDER_REALTIMEPROTECTION",
+                     "operator": "Boolean Equals",
+                     "value": {
+                        "type": "Boolean",
+                        "data": [
+                           true
+                        ]
+                     },
+                     "target": "Remote",
+                     "isArrayIndexed": false,
+                     "sameAsParent": false,
+                     "isDelimitedArray": false
+                  },
+                  {
+                     "id": "c51a2d0b-51bf-424d-8a70-e17b3193d563",
+                     "categoryName": "Windows Firewall",
+                     "propertyName": "Active Profile Disabled",
+                     "propertyValue": 2,
+                     "underlyingPropertyName": "TARGET_WINDOWSFIREWALL_ACTIVEPROFILES_DISABLED",
+                     "operator": "Enum None Of",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Domain",
+                           "Public",
+                           "Private"
+                        ]
+                     },
+                     "target": "Remote",
+                     "isArrayIndexed": false,
+                     "sameAsParent": false,
+                     "isDelimitedArray": true
+                  }
+               ]
+            }
+         ],
+         "protection": "Text",
+         "persistToEventLog": true,
+         "persistToRegistry": true,
+         "persistToEnvironment": true,
+         "persistToCommandPrompt": true
+      }
+   ],
+   "actions": [
+      {
+         "id": "b03e4daf-67ee-43cb-8366-4a70a9cac26d",
+         "key": "ACTION_CONDITIONAL_ACCESS_DEMO_DEVICETRUST_CLIENT_EXTENSION",
+         "name": "Conditional Access - Demo - deviceTRUST Client Extension",
+         "description": "Denies access based on the demo value representing the availability of deviceTRUST Client Extension on the remote device.",
+         "data": [
+            {
+               "type": "Context",
+               "triggers": [
+                  "Logon",
+                  "Reconnect",
+                  "ContextChanged"
+               ],
+               "filters": [
+                  {
+                     "contextKey": "CONTEXT_DEMO_POLICY_MODE",
+                     "contextName": "Demo Policy Mode",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Notify"
+                        ]
+                     }
+                  },
+                  {
+                     "contextKey": "CONTEXT_DEMO_SECURITY_STATE",
+                     "contextName": "Demo Security State",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "No Client"
+                        ]
+                     }
+                  }
+               ],
+               "tasks": [
+                  {
+                     "id": "6233643a-7601-4090-9d83-32b3b6337dcc",
+                     "type": "Popup Message",
+                     "description": "No deviceTRUST Client Extension",
+                     "toast": false,
+                     "message": "Your device does not meet our security requirements (deviceTRUST Client Extension unavailable).%NEWLINE%Please install the deviceTRUST Client Extension from https://devicetrust.com/client.%NEWLINE%Access will be denied from January, 22 2016.",
+                     "title": "Conditional Access (Demo)",
+                     "triggerButtons": [
+                        {
+                           "triggerName": "Copy URL",
+                           "buttonText": "Copy URL",
+                           "closePopup": false
+                        },
+                        {
+                           "triggerName": "Help",
+                           "buttonText": "Contact Help Desk",
+                           "closePopup": false
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "type": "Context",
+               "triggers": [
+                  "Logon",
+                  "Reconnect",
+                  "ContextChanged"
+               ],
+               "filters": [
+                  {
+                     "contextKey": "CONTEXT_DEMO_POLICY_MODE",
+                     "contextName": "Demo Policy Mode",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Enforce"
+                        ]
+                     }
+                  },
+                  {
+                     "contextKey": "CONTEXT_DEMO_SECURITY_STATE",
+                     "contextName": "Demo Security State",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "No Client"
+                        ]
+                     }
+                  }
+               ],
+               "tasks": [
+                  {
+                     "id": "ab33ad1d-44a8-4c9b-86c7-33ce4de0b486",
+                     "type": "Deny Access",
+                     "description": "No deviceTRUST Client Extension",
+                     "allowShellInteraction": false,
+                     "title": "Conditional Access (Demo Security State)",
+                     "message": "Your device does not meet our security requirements (deviceTRUST Client Extension unavailable).%NEWLINE%Please install the deviceTRUST Client Extension from https://devicetrust.com/client.",
+                     "triggerButtons": [
+                        {
+                           "triggerName": "Copy URL",
+                           "buttonText": "Copy URL",
+                           "closePopup": false
+                        },
+                        {
+                           "triggerName": "Help",
+                           "buttonText": "Contact Help Desk",
+                           "closePopup": false
+                        }
+                     ],
+                     "persistence": "Context",
+                     "timeout": 120,
+                     "alwaysShowSignoutButton": false
+                  }
+               ]
+            },
+            {
+               "type": "Custom",
+               "triggers": [
+                  "Custom"
+               ],
+               "filters": [],
+               "tasks": [
+                  {
+                     "id": "1bee08b1-29c6-4636-93b2-4a6260e566b7",
+                     "type": "Custom Process",
+                     "description": "Copy URL",
+                     "runAs": "User",
+                     "hidden": true,
+                     "wait": false,
+                     "captureOutput": false,
+                     "timeout": 300,
+                     "failureDetection": "Exit Code",
+                     "runOnClient": false,
+                     "useEmbeddedScript": false,
+                     "filename": "%SystemRoot%\\System32\\cmd.exe",
+                     "filenameTarget": "Executable",
+                     "args": "/C \"echo https://devicetrust.com/client | clip\"",
+                     "bypassAppLockerPolicy": false
+                  }
+               ],
+               "customName": "Copy URL"
+            },
+            {
+               "type": "Custom",
+               "triggers": [
+                  "Custom"
+               ],
+               "filters": [],
+               "tasks": [
+                  {
+                     "id": "976f7eba-18ef-465c-9f72-8d83d9a9eeef",
+                     "type": "Custom Process",
+                     "description": "Help Desk",
+                     "runAs": "User",
+                     "hidden": false,
+                     "wait": true,
+                     "captureOutput": false,
+                     "timeout": 300,
+                     "failureDetection": "Exit Code",
+                     "runOnClient": true,
+                     "useEmbeddedScript": false,
+                     "filename": "https://devicetrust.com",
+                     "filenameTarget": "Run",
+                     "bypassAppLockerPolicy": false
+                  }
+               ],
+               "customName": "Help"
+            }
+         ],
+         "enabled": true,
+         "priority": "High"
+      },
+      {
+         "id": "81abb0be-7aaf-4624-9ec0-5dbaacbe0407",
+         "key": "ACTION_CONDITIONAL_ACCESS_DEMO_SECURITY_STATE",
+         "name": "Conditional Access - Demo - Security State",
+         "description": "Denies access based on the demo value representing the security state of the remote device.",
+         "data": [
+            {
+               "type": "Context",
+               "triggers": [
+                  "Logon",
+                  "Reconnect",
+                  "ContextChanged"
+               ],
+               "filters": [
+                  {
+                     "contextKey": "CONTEXT_DEMO_POLICY_MODE",
+                     "contextName": "Demo Policy Mode",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Notify"
+                        ]
+                     }
+                  },
+                  {
+                     "contextKey": "CONTEXT_DEMO_SECURITY_STATE",
+                     "contextName": "Demo Security State",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Unprotected"
+                        ]
+                     }
+                  }
+               ],
+               "tasks": [
+                  {
+                     "id": "78ef02ac-496c-45b1-ae6d-5ff2d06bc295",
+                     "type": "Popup Message",
+                     "description": "Unprotected Device",
+                     "toast": false,
+                     "message": "Your device does not meet our security requirements (Firewall deactivated).%NEWLINE%Access will be denied from January, 22 2016.",
+                     "title": "Conditional Access (Demo Security State)",
+                     "triggerButtons": [
+                        {
+                           "triggerName": "Help",
+                           "buttonText": "Contact Help Desk",
+                           "closePopup": false
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "type": "Context",
+               "triggers": [
+                  "Logon",
+                  "Reconnect",
+                  "ContextChanged"
+               ],
+               "filters": [
+                  {
+                     "contextKey": "CONTEXT_DEMO_POLICY_MODE",
+                     "contextName": "Demo Policy Mode",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Enforce"
+                        ]
+                     }
+                  },
+                  {
+                     "contextKey": "CONTEXT_DEMO_SECURITY_STATE",
+                     "contextName": "Demo Security State",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Unprotected"
+                        ]
+                     }
+                  }
+               ],
+               "tasks": [
+                  {
+                     "id": "3a855e5a-23b0-4f57-854f-0b8b2a780692",
+                     "type": "Deny Access",
+                     "description": "Unprotected Device",
+                     "allowShellInteraction": false,
+                     "title": "Conditional Access (Demo Security State)",
+                     "message": "Your device does not meet our security requirements (Firewall deactivated).%NEWLINE%Please activate the Firewall to regain access.",
+                     "triggerButtons": [
+                        {
+                           "triggerName": "Help",
+                           "buttonText": "Contact Help Desk",
+                           "closePopup": false
+                        }
+                     ],
+                     "persistence": "Context",
+                     "timeout": 120,
+                     "alwaysShowSignoutButton": false
+                  }
+               ]
+            },
+            {
+               "type": "Custom",
+               "triggers": [
+                  "Custom"
+               ],
+               "filters": [],
+               "tasks": [
+                  {
+                     "id": "96be58d4-6a22-4d20-9d56-c3f2c9a94256",
+                     "type": "Custom Process",
+                     "description": "Help Desk",
+                     "runAs": "User",
+                     "hidden": false,
+                     "wait": true,
+                     "captureOutput": false,
+                     "timeout": 300,
+                     "failureDetection": "Exit Code",
+                     "runOnClient": true,
+                     "useEmbeddedScript": false,
+                     "filename": "https://devicetrust.com",
+                     "filenameTarget": "Run",
+                     "bypassAppLockerPolicy": false
+                  }
+               ],
+               "customName": "Help"
+            }
+         ],
+         "enabled": true,
+         "priority": "High"
+      },
+      {
+         "id": "e9132fe2-c1d3-4d02-926b-8b25e68b2a13",
+         "key": "ACTION_CONDITIONAL_ACCESS_DEMO_UNAUTHORIZED_USB_DRIVES",
+         "name": "Conditional Access - Demo - Unauthorized USB Drives",
+         "description": "Denies access based on the demo value representing whether an unauthorized USB drive is plugged into the remote device.",
+         "data": [
+            {
+               "type": "Context",
+               "triggers": [
+                  "Logon",
+                  "Reconnect",
+                  "ContextChanged"
+               ],
+               "filters": [
+                  {
+                     "contextKey": "CONTEXT_DEMO_POLICY_MODE",
+                     "contextName": "Demo Policy Mode",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Notify"
+                        ]
+                     }
+                  },
+                  {
+                     "contextKey": "CONTEXT_DEMO_UNAUTHORIZED_USB_DRIVES",
+                     "contextName": "Demo Unauthorized USB Drives",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "True"
+                        ]
+                     }
+                  }
+               ],
+               "tasks": [
+                  {
+                     "id": "ac847add-c0a9-4819-bf39-a556539612c4",
+                     "type": "Popup Message",
+                     "description": "Unauthorized USB Drives",
+                     "toast": false,
+                     "message": "You are using unauthorized USB drives plugged into your device. Please remove all unauthorized USB drives.%NEWLINE%Access will be denied from January, 22 2016.",
+                     "title": "Conditional Access (Demo Unauthorized USB Drives)",
+                     "triggerButtons": [
+                        {
+                           "triggerName": "Help",
+                           "buttonText": "Contact Help Desk",
+                           "closePopup": false
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "type": "Context",
+               "triggers": [
+                  "Logon",
+                  "Reconnect",
+                  "ContextChanged"
+               ],
+               "filters": [
+                  {
+                     "contextKey": "CONTEXT_DEMO_POLICY_MODE",
+                     "contextName": "Demo Policy Mode",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Enforce"
+                        ]
+                     }
+                  },
+                  {
+                     "contextKey": "CONTEXT_DEMO_UNAUTHORIZED_USB_DRIVES",
+                     "contextName": "Demo Unauthorized USB Drives",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "True"
+                        ]
+                     }
+                  }
+               ],
+               "tasks": [
+                  {
+                     "id": "bec31d17-fe05-4eca-b737-1295856a0170",
+                     "type": "Deny Access",
+                     "description": "Unauthorized USB Drives",
+                     "allowShellInteraction": false,
+                     "title": "Conditional Access (Demo Unauthorized USB Drives)",
+                     "message": "One or more unauthorized USB drives are plugged into your device.%NEWLINE%Please remove all unauthorized USB drives to regain access.",
+                     "triggerButtons": [
+                        {
+                           "triggerName": "Help",
+                           "buttonText": "Contact Help Desk",
+                           "closePopup": false
+                        }
+                     ],
+                     "persistence": "Context",
+                     "alwaysShowSignoutButton": false
+                  }
+               ]
+            },
+            {
+               "type": "Custom",
+               "triggers": [
+                  "Custom"
+               ],
+               "filters": [],
+               "tasks": [
+                  {
+                     "id": "f2b85dc0-e3cf-44b3-b08a-e05e87a304d0",
+                     "type": "Custom Process",
+                     "description": "Help Desk",
+                     "runAs": "User",
+                     "hidden": false,
+                     "wait": true,
+                     "captureOutput": false,
+                     "timeout": 300,
+                     "failureDetection": "Exit Code",
+                     "runOnClient": true,
+                     "useEmbeddedScript": false,
+                     "filename": "https://devicetrust.com",
+                     "filenameTarget": "Run",
+                     "bypassAppLockerPolicy": false
+                  }
+               ],
+               "customName": "Help"
+            }
+         ],
+         "enabled": true,
+         "priority": "High"
+      },
+      {
+         "id": "1bbfe63d-98fd-494a-9640-0a685cb7524a",
+         "key": "ACTION_CONDITIONAL_ACCESS_PROCESS_SHARING_TOOLS",
+         "name": "Conditional Access - Process - Sharing Tools",
+         "description": "",
+         "data": [
+            {
+               "type": "Trigger",
+               "triggers": [
+                  "Logon",
+                  "Reconnect",
+                  "ContextChanged"
+               ],
+               "filters": [
+                  {
+                     "contextKey": "CONTEXT_PROCESS_STATE_SNIPPINGTOOL",
+                     "contextName": "Process State - SnippingTool ",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Running"
+                        ]
+                     }
+                  }
+               ],
+               "tasks": [
+                  {
+                     "id": "e09d0901-3af1-49d1-ac4e-c62a91d7c75a",
+                     "type": "Deny Access",
+                     "description": "Content blocked",
+                     "allowShellInteraction": false,
+                     "title": "Content blocked",
+                     "message": "This session's content has been blocked because \"SnippingTool\" is running on your local client. %NEWLINE% Please stop \"Snipping Tool\" to re-gain access.",
+                     "triggerButtons": [],
+                     "persistence": "Context",
+                     "alwaysShowSignoutButton": false
+                  }
+               ]
+            },
+            {
+               "type": "Trigger",
+               "triggers": [
+                  "Logon",
+                  "Reconnect",
+                  "ContextChanged"
+               ],
+               "filters": [
+                  {
+                     "contextKey": "CONTEXT_PROCESS_STATE_ZOOM",
+                     "contextName": "Process State - Zoom",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Running"
+                        ]
+                     }
+                  }
+               ],
+               "tasks": [
+                  {
+                     "id": "a4ed00d7-9ed3-4c36-b6e8-1cf0522f6226",
+                     "type": "Deny Access",
+                     "description": "Content blocked",
+                     "allowShellInteraction": false,
+                     "title": "Content blocked",
+                     "message": "This session's content has been blocked because \"Zoom\" is running on your local client. %NEWLINE% Please stop \"Zoom\" to re-gain access.",
+                     "triggerButtons": [],
+                     "persistence": "Context",
+                     "alwaysShowSignoutButton": false
+                  }
+               ]
+            }
+         ],
+         "enabled": true,
+         "priority": "Very High"
+      },
+      {
+         "id": "5970fcd8-3db6-4050-ad09-43149eb2daf6",
+         "key": "ACTION_CONDITIONAL_ACCESS_SECURITY_STATE",
+         "name": "Conditional Access - Security State",
+         "description": "Denies access based on the demo value representing the security state of the remote device.",
+         "data": [
+            {
+               "type": "Context",
+               "triggers": [
+                  "Logon",
+                  "Reconnect",
+                  "ContextChanged"
+               ],
+               "filters": [
+                  {
+                     "contextKey": "CONTEXT_SECURITY_STATE",
+                     "contextName": "Security State",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Unprotected"
+                        ]
+                     }
+                  }
+               ],
+               "tasks": [
+                  {
+                     "id": "21a4a976-9b44-416b-9af0-ee033db0d966",
+                     "type": "Deny Access",
+                     "description": "Conditional Access (Security State)",
+                     "allowShellInteraction": false,
+                     "title": "Conditional Access (Security State)",
+                     "message": "Your device does not meet our security requirements (Firewall deactivated).%NEWLINE%Please activate the Firewall to regain access.",
+                     "triggerButtons": [
+                        {
+                           "triggerName": "Help",
+                           "buttonText": "Contact Help Desk",
+                           "closePopup": false
+                        }
+                     ],
+                     "persistence": "Context",
+                     "timeout": 120,
+                     "alwaysShowSignoutButton": false
+                  }
+               ]
+            },
+            {
+               "type": "Custom",
+               "triggers": [
+                  "Custom"
+               ],
+               "filters": [],
+               "tasks": [
+                  {
+                     "id": "5ca03582-ece9-4868-a330-4e777d18c7ab",
+                     "type": "Custom Process",
+                     "description": "Help Desk",
+                     "runAs": "User",
+                     "hidden": false,
+                     "wait": true,
+                     "captureOutput": false,
+                     "timeout": 300,
+                     "failureDetection": "Exit Code",
+                     "runOnClient": true,
+                     "useEmbeddedScript": false,
+                     "filename": "https://devicetrust.com",
+                     "filenameTarget": "Run",
+                     "bypassAppLockerPolicy": false
+                  }
+               ],
+               "customName": "Help"
+            }
+         ],
+         "enabled": true,
+         "priority": "Very High"
+      },
+      {
+         "id": "c5363485-0c36-4186-b92b-2a8bbda7fc97",
+         "key": "ACTION_CONDITIONAL_APPLICATION_ACCESS_DEMO_MICROSOFT_APPLOCKER_AND_WINDOWS_DEFENDER_FIREWALL",
+         "name": "Conditional Application Access  - Demo - Microsoft AppLocker and Windows Defender Firewall",
+         "description": "Denies access to WordPad and to the Business Web App based on the demo value representing whether the remote device is connected to a secure Wi-Fi network.",
+         "data": [
+            {
+               "type": "Context",
+               "triggers": [
+                  "Logon",
+                  "Reconnect",
+                  "ContextChanged"
+               ],
+               "filters": [
+                  {
+                     "contextKey": "CONTEXT_DEMO_POLICY_MODE",
+                     "contextName": "Demo Policy Mode",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Notify"
+                        ]
+                     }
+                  }
+               ],
+               "tasks": [
+                  {
+                     "id": "ca9f47af-50ff-4e66-bf26-13d52984da14",
+                     "type": "Shortcut",
+                     "description": "Business Web App",
+                     "createOnlyIfTargetExists": false,
+                     "shortcutDirectories": [
+                        "%USERPROFILE%\\Desktop"
+                     ],
+                     "shortcutName": "Business Web App",
+                     "target": "https://dtbusinesswebapp.z6.web.core.windows.net/",
+                     "targetType": "URL",
+                     "persistence": "Context"
+                  },
+                  {
+                     "id": "eff5076d-ddca-4e81-8aa5-19b3e5a59822",
+                     "type": "Shortcut",
+                     "description": "WordPad",
+                     "createOnlyIfTargetExists": true,
+                     "shortcutDirectories": [
+                        "%USERPROFILE%\\Desktop"
+                     ],
+                     "shortcutName": "WordPad",
+                     "target": "%ProgramFiles%\\windows nt\\accessories\\wordpad.exe",
+                     "targetType": "File Path",
+                     "persistence": "Context",
+                     "predefinedId": ""
+                  }
+               ]
+            },
+            {
+               "type": "Context",
+               "triggers": [
+                  "Logon",
+                  "Reconnect",
+                  "ContextChanged"
+               ],
+               "filters": [
+                  {
+                     "contextKey": "CONTEXT_DEMO_POLICY_MODE",
+                     "contextName": "Demo Policy Mode",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Notify"
+                        ]
+                     }
+                  },
+                  {
+                     "contextKey": "CONTEXT_DEMO_WI_FI_SECURITY_MODE",
+                     "contextName": "Demo Wi-Fi Security Mode",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Insecure"
+                        ]
+                     }
+                  }
+               ],
+               "tasks": [
+                  {
+                     "id": "0615d2cc-15b5-4640-b580-6b30de7eb5ba",
+                     "type": "Popup Message",
+                     "description": "Insecure Wi-Fi network",
+                     "toast": false,
+                     "message": "You are not authorized to use WordPad and Business Web App (Insecure Wi-Fi network).%NEWLINE%Access will be denied from January, 22 2016.",
+                     "title": "Conditional Application Access (AppLocker & Firewall)",
+                     "triggerButtons": [
+                        {
+                           "triggerName": "Help",
+                           "buttonText": "Contact Help Desk",
+                           "closePopup": false
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "type": "Context",
+               "triggers": [
+                  "Logon",
+                  "Reconnect",
+                  "ContextChanged"
+               ],
+               "filters": [
+                  {
+                     "contextKey": "CONTEXT_DEMO_POLICY_MODE",
+                     "contextName": "Demo Policy Mode",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Enforce"
+                        ]
+                     }
+                  },
+                  {
+                     "contextKey": "CONTEXT_DEMO_WI_FI_SECURITY_MODE",
+                     "contextName": "Demo Wi-Fi Security Mode",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Secure"
+                        ]
+                     }
+                  }
+               ],
+               "tasks": [
+                  {
+                     "id": "90f67b90-aaca-41a9-aa3c-8dba258a9cbe",
+                     "type": "Shortcut",
+                     "description": "Business Web App",
+                     "createOnlyIfTargetExists": false,
+                     "shortcutDirectories": [
+                        "%USERPROFILE%\\Desktop"
+                     ],
+                     "shortcutName": "Business Web App",
+                     "target": "https://dtbusinesswebapp.z6.web.core.windows.net/",
+                     "targetType": "URL",
+                     "persistence": "Context"
+                  },
+                  {
+                     "id": "9ccb1f8c-4f7f-49d0-88d2-171f0afec947",
+                     "type": "Shortcut",
+                     "description": "WordPad",
+                     "createOnlyIfTargetExists": true,
+                     "shortcutDirectories": [
+                        "%USERPROFILE%\\Desktop"
+                     ],
+                     "shortcutName": "WordPad",
+                     "target": "C:\\Program Files (x86)\\windows nt\\accessories\\wordpad.exe",
+                     "targetType": "File Path",
+                     "persistence": "Context",
+                     "predefinedId": ""
+                  }
+               ]
+            },
+            {
+               "type": "Context",
+               "triggers": [
+                  "Logon",
+                  "Reconnect",
+                  "ContextChanged"
+               ],
+               "filters": [
+                  {
+                     "contextKey": "CONTEXT_DEMO_POLICY_MODE",
+                     "contextName": "Demo Policy Mode",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Enforce"
+                        ]
+                     }
+                  },
+                  {
+                     "contextKey": "CONTEXT_DEMO_WI_FI_SECURITY_MODE",
+                     "contextName": "Demo Wi-Fi Security Mode",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Insecure"
+                        ]
+                     }
+                  }
+               ],
+               "tasks": [
+                  {
+                     "id": "83e57c17-688c-44c2-8000-543319ff7939",
+                     "type": "Windows Firewall",
+                     "description": "Deny Business Web App",
+                     "action": "Deny",
+                     "entries": [
+                        {
+                           "protocol": "TCP & UDP",
+                           "ports": "80,443",
+                           "ipOrDNSList": [
+                              "52.239.143.33"
+                           ]
+                        }
+                     ],
+                     "persistence": "Context"
+                  },
+                  {
+                     "id": "95c9fd92-778d-4475-84ea-e9cb60c9a0ac",
+                     "type": "Microsoft AppLocker",
+                     "description": "Deny WordPad",
+                     "persistence": "Connection",
+                     "wait": true,
+                     "timeout": 60,
+                     "rule": {
+                        "type": "Path",
+                        "target": "Executable",
+                        "action": "Deny",
+                        "path": "*\\wordpad.exe",
+                        "exceptions": []
+                     }
+                  },
+                  {
+                     "id": "46e93e25-70a9-4f6c-9888-370af02e49c8",
+                     "type": "Terminate App",
+                     "description": "Close WordPad",
+                     "autoclose": false,
+                     "identifyByPolicy": false,
+                     "timeout": 20,
+                     "message": "You are not authorized to use these applications. Please save your work as these applications will be closed and access will be denied.",
+                     "title": "Access Denied",
+                     "processes": [
+                        "wordpad.exe"
+                     ]
+                  }
+               ]
+            },
+            {
+               "type": "Custom",
+               "triggers": [
+                  "Custom"
+               ],
+               "filters": [],
+               "tasks": [
+                  {
+                     "id": "c1b1ff20-2533-4287-b79a-526206eb36cb",
+                     "type": "Custom Process",
+                     "description": "Help Desk",
+                     "runAs": "User",
+                     "hidden": false,
+                     "wait": true,
+                     "captureOutput": false,
+                     "timeout": 300,
+                     "failureDetection": "Exit Code",
+                     "runOnClient": true,
+                     "useEmbeddedScript": false,
+                     "filename": "https://devicetrust.com",
+                     "filenameTarget": "Run",
+                     "bypassAppLockerPolicy": false
+                  }
+               ],
+               "customName": "Help"
+            }
+         ],
+         "enabled": true,
+         "priority": "Low"
+      },
+      {
+         "id": "0a1b10e6-51c7-403b-a8c8-90afae68bdbc",
+         "key": "ACTION_CONDITIONAL_APPLICATION_ACCESS_DEMO_FSLOGIX_APP_MASKING",
+         "name": "Conditional Application Access - Demo - FSLogix App Masking",
+         "description": "Hides Notepad++ based on the demo value representing the country of the remote device.",
+         "data": [
+            {
+               "type": "Context",
+               "triggers": [
+                  "Logon",
+                  "Reconnect",
+                  "ContextChanged"
+               ],
+               "filters": [
+                  {
+                     "contextKey": "CONTEXT_DEMO_POLICY_MODE",
+                     "contextName": "Demo Policy Mode",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Notify"
+                        ]
+                     }
+                  }
+               ],
+               "tasks": [
+                  {
+                     "id": "94cbbf33-f1a9-4a11-86ed-e5d0ec19ed72",
+                     "type": "Shortcut",
+                     "description": "Notepad++",
+                     "createOnlyIfTargetExists": true,
+                     "shortcutDirectories": [
+                        "%USERPROFILE%\\Desktop"
+                     ],
+                     "shortcutName": "Notepad++",
+                     "target": "%ProgramFiles%\\Notepad++\\notepad++.exe",
+                     "targetType": "File Path",
+                     "persistence": "Context"
+                  }
+               ]
+            },
+            {
+               "type": "Context",
+               "triggers": [
+                  "Logon",
+                  "Reconnect",
+                  "ContextChanged"
+               ],
+               "filters": [
+                  {
+                     "contextKey": "CONTEXT_DEMO_POLICY_MODE",
+                     "contextName": "Demo Policy Mode",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Notify"
+                        ]
+                     }
+                  },
+                  {
+                     "contextKey": "CONTEXT_DEMO_COUNTRY",
+                     "contextName": "Demo Country",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Unauthorized"
+                        ]
+                     }
+                  }
+               ],
+               "tasks": [
+                  {
+                     "id": "196a3da8-dc38-4828-9592-fda2c60bd969",
+                     "type": "Popup Message",
+                     "description": "Unauthorized Country",
+                     "toast": false,
+                     "message": "You are not authorized to use Notepad++ (Unauthorized Country).%NEWLINE%Access will be denied from January, 22 2016.",
+                     "title": "Conditional Application Access (FSLogix)",
+                     "triggerButtons": [
+                        {
+                           "triggerName": "Help",
+                           "buttonText": "Contact Help Desk",
+                           "closePopup": false
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "type": "Context",
+               "triggers": [
+                  "Logon",
+                  "Reconnect",
+                  "ContextChanged"
+               ],
+               "filters": [
+                  {
+                     "contextKey": "CONTEXT_DEMO_POLICY_MODE",
+                     "contextName": "Demo Policy Mode",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Enforce"
+                        ]
+                     }
+                  },
+                  {
+                     "contextKey": "CONTEXT_DEMO_COUNTRY",
+                     "contextName": "Demo Country",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Authorized"
+                        ]
+                     }
+                  }
+               ],
+               "tasks": [
+                  {
+                     "id": "f9008ffa-efa8-4af2-b855-e884851be3ff",
+                     "type": "Shortcut",
+                     "description": "Notepad++",
+                     "createOnlyIfTargetExists": true,
+                     "shortcutDirectories": [
+                        "%USERPROFILE%\\Desktop"
+                     ],
+                     "shortcutName": "Notepad++",
+                     "target": "%ProgramFiles%\\Notepad++\\notepad++.exe",
+                     "targetType": "File Path",
+                     "persistence": "Context"
+                  }
+               ]
+            },
+            {
+               "type": "Context",
+               "triggers": [
+                  "Logon",
+                  "Reconnect",
+                  "ContextChanged"
+               ],
+               "filters": [
+                  {
+                     "contextKey": "CONTEXT_DEMO_POLICY_MODE",
+                     "contextName": "Demo Policy Mode",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Enforce"
+                        ]
+                     }
+                  },
+                  {
+                     "contextKey": "CONTEXT_DEMO_COUNTRY",
+                     "contextName": "Demo Country",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Unauthorized"
+                        ]
+                     }
+                  }
+               ],
+               "tasks": [
+                  {
+                     "id": "db1f3d3a-ffae-4604-89d3-b99b07474bd8",
+                     "type": "FSLogix App Masking",
+                     "description": "Hide Notepad++",
+                     "command": "HideApplication",
+                     "path": "C:\\Program Files\\FSLogix\\Apps\\Rules\\NotepadPlusPlus.fxa",
+                     "persistence": "Connection"
+                  },
+                  {
+                     "id": "7a4657de-be42-4a3a-8ce9-104ba3e59c43",
+                     "type": "Terminate App",
+                     "description": "Close Notepad++",
+                     "autoclose": false,
+                     "identifyByPolicy": false,
+                     "timeout": 20,
+                     "message": "You are not authorized to use these applications. Please save your work as these applications will be closed and access will be denied.",
+                     "title": "Access Denied",
+                     "processes": [
+                        "notepad++.exe"
+                     ]
+                  }
+               ]
+            },
+            {
+               "type": "Custom",
+               "triggers": [
+                  "Custom"
+               ],
+               "filters": [],
+               "tasks": [
+                  {
+                     "id": "d5f944d0-03f0-40d6-9fc8-43f894fd3ef9",
+                     "type": "Custom Process",
+                     "description": "Help Desk",
+                     "runAs": "User",
+                     "hidden": false,
+                     "wait": true,
+                     "captureOutput": false,
+                     "timeout": 300,
+                     "failureDetection": "Exit Code",
+                     "runOnClient": true,
+                     "useEmbeddedScript": false,
+                     "filename": "https://devicetrust.com",
+                     "filenameTarget": "Run",
+                     "bypassAppLockerPolicy": false
+                  }
+               ],
+               "customName": "Help"
+            }
+         ],
+         "enabled": true,
+         "priority": "Low"
+      },
+      {
+         "id": "1246465c-83a5-466e-9c94-3aee333c5c41",
+         "key": "ACTION_CONDITIONAL_CONFIGURATION_DEMO_PRINTER_MANAGEMENT",
+         "name": "Conditional Configuration - Demo - Printer Management",
+         "description": "Defines a default printer based on the demo value representing the placement of the remote device within a building.",
+         "data": [
+            {
+               "type": "Trigger",
+               "triggers": [
+                  "Logon"
+               ],
+               "filters": [],
+               "tasks": [
+                  {
+                     "id": "4f973c93-0571-4810-975d-885219c9e5e5",
+                     "type": "Shortcut",
+                     "description": "Printers",
+                     "createOnlyIfTargetExists": false,
+                     "shortcutDirectories": [
+                        "%USERPROFILE%\\Desktop"
+                     ],
+                     "shortcutName": "Printers",
+                     "target": "",
+                     "targetType": "Predefined",
+                     "persistence": "Context",
+                     "predefinedId": "Printers"
+                  }
+               ]
+            },
+            {
+               "type": "Context",
+               "triggers": [
+                  "Logon",
+                  "Reconnect",
+                  "ContextChanged"
+               ],
+               "filters": [
+                  {
+                     "contextKey": "CONTEXT_DEMO_DEVICE_PLACEMENT",
+                     "contextName": "Demo Device Placement",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Unknown"
+                        ]
+                     }
+                  }
+               ],
+               "tasks": [
+                  {
+                     "id": "413c0a3e-26d2-4352-84bf-81388ee5d3c7",
+                     "type": "Map Printer",
+                     "description": "Unknown",
+                     "setDefaultPrinter": {
+                        "primary": "Corporate",
+                        "failover": [
+                           "Microsoft Print to PDF"
+                        ]
+                     },
+                     "wait": false
+                  }
+               ]
+            },
+            {
+               "type": "Context",
+               "triggers": [
+                  "Logon",
+                  "Reconnect",
+                  "ContextChanged"
+               ],
+               "filters": [
+                  {
+                     "contextKey": "CONTEXT_DEMO_DEVICE_PLACEMENT",
+                     "contextName": "Demo Device Placement",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Floor 1"
+                        ]
+                     }
+                  }
+               ],
+               "tasks": [
+                  {
+                     "id": "fdae26db-c977-4069-be34-2c8e8ce2b0a3",
+                     "type": "Map Printer",
+                     "description": "Floor 1",
+                     "setDefaultPrinter": {
+                        "primary": "Floor 1",
+                        "failover": [
+                           "Corporate"
+                        ]
+                     },
+                     "wait": false
+                  }
+               ]
+            },
+            {
+               "type": "Context",
+               "triggers": [
+                  "ContextChanged",
+                  "Logon",
+                  "Reconnect"
+               ],
+               "filters": [
+                  {
+                     "contextKey": "CONTEXT_DEMO_DEVICE_PLACEMENT",
+                     "contextName": "Demo Device Placement",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "Floor 2"
+                        ]
+                     }
+                  }
+               ],
+               "tasks": [
+                  {
+                     "id": "c5485e42-c17b-4630-9c47-2516319a36ea",
+                     "type": "Map Printer",
+                     "description": "Floor 2",
+                     "setDefaultPrinter": {
+                        "primary": "Floor 2",
+                        "failover": [
+                           "Corporate"
+                        ]
+                     },
+                     "wait": false
+                  }
+               ]
+            }
+         ],
+         "enabled": true,
+         "priority": "Very Low"
+      },
+      {
+         "id": "b784fc76-1f64-49d7-b0f3-4f99af19c012",
+         "key": "ACTION_CONDITIONAL_CONFIGURATION_DEMO_SCREEN_SAVER",
+         "name": "Conditional Configuration - Demo - Screen Saver",
+         "description": "Defines a session screen saver based on the demo value representing whether the screen saver is secure on the remote device.",
+         "data": [
+            {
+               "type": "Context",
+               "triggers": [
+                  "Reconnect",
+                  "Logon",
+                  "ContextChanged"
+               ],
+               "filters": [
+                  {
+                     "contextKey": "CONTEXT_DEMO_SECURE_SCREEN_SAVER",
+                     "contextName": "Demo Secure Screen Saver",
+                     "contextMode": "Left-Most Path",
+                     "operator": "Enum Equals",
+                     "value": {
+                        "type": "Enum",
+                        "data": [
+                           "False"
+                        ]
+                     }
+                  }
+               ],
+               "tasks": [
+                  {
+                     "id": "bfea6927-98d4-4e34-8430-43888f90d608",
+                     "type": "Screen Saver",
+                     "description": "Enable Session Screen Saver",
+                     "command": "Enable",
+                     "secure": true,
+                     "filename": "scrnsave.scr",
+                     "timeout": 5,
+                     "persistence": "Connection"
+                  }
+               ]
+            }
+         ],
+         "enabled": true,
+         "priority": "Very Low"
+      },
+      {
+         "id": "2e7e799f-958d-456d-9311-c5744c1639a7",
+         "key": "ACTION_CONDITIONAL_CONFIGURATION_DEMO_USER_DEFAULTS",
+         "name": "Conditional Configuration - Demo - User Defaults",
+         "description": "Defines session user default settings such as Registry, File settings.",
+         "data": [
+            {
+               "type": "Trigger",
+               "triggers": [
+                  "Logon"
+               ],
+               "filters": [],
+               "tasks": [
+                  {
+                     "id": "bcf4caed-26de-431a-b69c-9c9348db84a9",
+                     "type": "Windows Registry",
+                     "description": "Regedit Favorites",
+                     "persistence": "Permanent",
+                     "operations": [
+                        {
+                           "command": "Update",
+                           "path": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Applets\\Regedit\\Favorites",
+                           "name": "Contexts",
+                           "value": "Computer\\HKEY_CURRENT_USER\\Software\\deviceTRUST\\Contexts",
+                           "dataType": "REG_SZ",
+                           "protect": false
+                        },
+                        {
+                           "command": "Update",
+                           "path": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Applets\\Regedit\\Favorites",
+                           "name": "Properties",
+                           "value": "Computer\\HKEY_CURRENT_USER\\Software\\deviceTRUST\\Properties",
+                           "dataType": "REG_SZ",
+                           "protect": false
+                        }
+                     ]
+                  },
+                  {
+                     "id": "5e147a63-cd08-48d0-8cf9-ab181738885b",
+                     "type": "Windows Registry",
+                     "description": "Wallpaper",
+                     "persistence": "Permanent",
+                     "operations": [
+                        {
+                           "command": "Update",
+                           "path": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System",
+                           "name": "Wallpaper",
+                           "value": "C:\\Windows\\Web\\Wallpaper\\deviceTRUST_Wallpaper.jpg",
+                           "dataType": "REG_SZ",
+                           "protect": false
+                        },
+                        {
+                           "command": "Update",
+                           "path": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System",
+                           "name": "WallpaperStyle",
+                           "value": "4",
+                           "dataType": "REG_SZ",
+                           "protect": false
+                        }
+                     ]
+                  }
+               ]
+            }
+         ],
+         "enabled": true,
+         "priority": "Very Low"
+      }
+   ],
+   "messages": [],
+   "settings": [
+      {
+         "type": "AppLocker",
+         "enabled": true,
+         "rules": [
+            {
+               "id": "0db5c003-0ce5-495d-850e-e39d9bd76b4b",
+               "type": "Path",
+               "enabled": true,
+               "target": "Executable",
+               "action": "Allow",
+               "user": {
+                  "name": "Everyone",
+                  "sid": "S-1-1-0"
+               },
+               "path": "*",
+               "exceptions": []
+            },
+            {
+               "id": "0db5c005-0ce5-495d-850e-e39d9bd76b4b",
+               "type": "Publisher",
+               "enabled": true,
+               "target": "WindowsInstaller",
+               "action": "Allow",
+               "user": {
+                  "name": "Everyone",
+                  "sid": "S-1-1-0"
+               },
+               "publisherName": "*",
+               "productName": "*",
+               "binaryName": "*",
+               "binaryVersion": "*",
+               "binaryVersionComparison": "AndAbove",
+               "exceptions": []
+            },
+            {
+               "id": "0db5c006-0ce5-495d-850e-e39d9bd76b4b",
+               "type": "Path",
+               "enabled": true,
+               "target": "WindowsInstaller",
+               "action": "Allow",
+               "user": {
+                  "name": "Everyone",
+                  "sid": "S-1-1-0"
+               },
+               "path": "%WINDIR%\\Installer\\*",
+               "exceptions": []
+            },
+            {
+               "id": "0db5c007-0ce5-495d-850e-e39d9bd76b4b",
+               "type": "Path",
+               "enabled": true,
+               "target": "WindowsInstaller",
+               "action": "Allow",
+               "user": {
+                  "name": "BUILTIN\\Administrators",
+                  "sid": "S-1-5-32-544"
+               },
+               "path": "*.*",
+               "exceptions": []
+            },
+            {
+               "id": "0db5c008-0ce5-495d-850e-e39d9bd76b4b",
+               "type": "Path",
+               "enabled": true,
+               "target": "Script",
+               "action": "Allow",
+               "user": {
+                  "name": "Everyone",
+                  "sid": "S-1-1-0"
+               },
+               "path": "%WINDIR%\\*",
+               "exceptions": []
+            },
+            {
+               "id": "0db5c009-0ce5-495d-850e-e39d9bd76b4b",
+               "type": "Path",
+               "enabled": true,
+               "target": "Script",
+               "action": "Allow",
+               "user": {
+                  "name": "Everyone",
+                  "sid": "S-1-1-0"
+               },
+               "path": "%PROGRAMFILES%\\*",
+               "exceptions": []
+            },
+            {
+               "id": "0db5c010-0ce5-495d-850e-e39d9bd76b4b",
+               "type": "Path",
+               "enabled": true,
+               "target": "Script",
+               "action": "Allow",
+               "user": {
+                  "name": "BUILTIN\\Administrators",
+                  "sid": "S-1-5-32-544"
+               },
+               "path": "*",
+               "exceptions": []
+            },
+            {
+               "id": "0db5c011-0ce5-495d-850e-e39d9bd76b4b",
+               "type": "Publisher",
+               "enabled": true,
+               "target": "AppX",
+               "action": "Allow",
+               "user": {
+                  "name": "Everyone",
+                  "sid": "S-1-1-0"
+               },
+               "publisherName": "*",
+               "productName": "*",
+               "binaryName": "*",
+               "binaryVersion": "*",
+               "binaryVersionComparison": "AndAbove",
+               "exceptions": []
+            },
+            {
+               "id": "87016caa-a865-45b0-9c21-03918917e9f6",
+               "type": "Owner",
+               "enabled": true,
+               "target": "Script",
+               "user": {
+                  "name": "Everyone",
+                  "sid": "S-1-1-0"
+               },
+               "folder": "%OSDRIVE%\\*",
+               "exceptions": []
+            }
+         ],
+         "startService": true,
+         "eventLogEnable": false,
+         "eventLogMaxLogSizeKb": 0,
+         "blockPowerShell": true,
+         "auditPowerShell": false,
+         "preferCsp": false,
+         "executableEnforcement": "Enforce",
+         "windowsInstallerEnforcement": "NotConfigured",
+         "scriptEnforcement": "NotConfigured",
+         "appxEnforcement": "NotConfigured",
+         "refreshEnabled": true,
+         "refreshUsers": [
+            {
+               "name": "BUILTIN\\Administrators",
+               "sid": "S-1-5-32-544"
+            }
+         ],
+         "owners": [
+            {
+               "name": "BUILTIN\\Administrators",
+               "sid": "S-1-5-32-544"
+            },
+            {
+               "name": "NT AUTHORITY\\SYSTEM",
+               "sid": "S-1-5-18"
+            },
+            {
+               "name": "NT SERVICE\\TrustedInstaller",
+               "sid": "S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464"
+            }
+         ],
+         "ownerPathExclusions": [
+            "%OSDRIVE%\\$Recycle.Bin",
+            "%OSDRIVE%\\ProgramData",
+            "%OSDRIVE%\\System Volume Information",
+            "%OSDRIVE%\\Users",
+            "%PROGRAMFILES%",
+            "%WINDIR%",
+            "%OSDRIVE%\\Transfer"
+         ]
+      },
+      {
+         "type": "CustomProperties",
+         "settingsEnabled": true,
+         "enabled": false,
+         "runAs": "User",
+         "delayUntilPropertiesAvailable": false,
+         "captureOutput": false,
+         "timeout": 300,
+         "failureDetection": "Exit Code",
+         "embeddedScript": "# Example PowerShell to create a LOCAL_CUSTOM_EXAMPLE property\r\n$exampleValue=$env:USERNAME\r\nWrite-Host \"LOCAL_CUSTOM_EXAMPLE=$exampleValue\"",
+         "embeddedScriptTarget": "PowerShell",
+         "powerShellExecutionPolicy": "NotSpecified",
+         "bypassAppLockerPolicy": false,
+         "localDelayUntilPropertiesAvailable": false,
+         "localPersistAcrossReconnects": false,
+         "localHashProperties": false,
+         "remoteWindowsProcess": {
+            "enabled": true,
+            "runAs": "Current",
+            "timeout": 0,
+            "failureDetection": "Exit Code And Error Message",
+            "embeddedScript": "while($true){\n\n    $TeamsProcess = Get-Process 'Teams' -ErrorAction Ignore\n    Write-Host \"REMOTE_CUSTOM_TEAMS_RUNNING=$($TeamsProcess.Length -gt 0)\"\n\n    $zoomProcess = Get-Process 'Zoom' -ErrorAction Ignore\n    Write-Host \"REMOTE_CUSTOM_ZOOM_RUNNING=$($zoomProcess.Length -gt 0)\"\n\n    $snippingProcess = Get-Process 'snipp*' -ErrorAction Ignore\n    Write-Host \"REMOTE_CUSTOM_SNIP_RUNNING=$($snippingProcess.Length -gt 0)\"\n\n    Write-Host \"CONTINUE\"\n\n    Sleep -Seconds 1\n\n}",
+            "embeddedScriptTarget": "PowerShell",
+            "powerShellExecutionPolicy": "Unrestricted",
+            "bypassAppLockerPolicy": false,
+            "hashProperties": false
+         },
+         "remoteIgelProcess": {
+            "enabled": false,
+            "runAs": "Current",
+            "timeout": 300,
+            "failureDetection": "Exit Code",
+            "embeddedScript": "#!/bin/bash\n echo REMOTE_CUSTOM_EXAMPLE=$(whoami)\n",
+            "embeddedScriptTarget": "Unknown",
+            "hashProperties": false
+         },
+         "remoteNoTouchProcess": {
+            "enabled": false,
+            "runAs": "Current",
+            "timeout": 300,
+            "failureDetection": "Exit Code",
+            "embeddedScript": "#!/bin/bash\necho REMOTE_CUSTOM_EXAMPLE=$(whoami)\n",
+            "embeddedScriptTarget": "Unknown",
+            "hashProperties": false
+         },
+         "remoteLinuxProcess": {
+            "enabled": false,
+            "runAs": "Current",
+            "timeout": 300,
+            "failureDetection": "Exit Code",
+            "embeddedScript": "#!/bin/bash\n echo REMOTE_CUSTOM_EXAMPLE=$(whoami)\n",
+            "embeddedScriptTarget": "Unknown",
+            "hashProperties": false
+         }
+      },
+      {
+         "type": "Printer",
+         "enabled": true,
+         "maxNumberOfRetries": 5,
+         "retryIntervalInSeconds": 1,
+         "letPrintSpoolerManageNetworkPrinters": false,
+         "letWindowsManageDefaultPrinter": false
+      },
+      {
+         "type": "Properties",
+         "enabled": true,
+         "options": {
+            "persistToEventLog": true,
+            "persistToRegistry": true,
+            "persistToEnvironment": true,
+            "persistToCommandPrompt": true,
+            "forwardRemoteProperties": false,
+            "whoisOptions": {
+               "enabledUsers": [],
+               "disabledUsers": [],
+               "doNotManageInternalUsers": false,
+               "preferPhysicalAdapter": false
+            },
+            "locationOptions": {
+               "enabledUsers": [],
+               "disabledUsers": [],
+               "doNotManageInternalUsers": false,
+               "thirdPartyPositionOptions": {
+                  "providerUrl": "https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyBTt12mz1Juzfofd5eBcCk6sg3wGk9HDNM",
+                  "preferOS": false,
+                  "timeout": 5
+               },
+               "thirdPartyAddressOptions": {
+                  "providerUrl": "\t• https://maps.googleapis.com/maps/api/geocode/json?latlng=%LAT%,%LNG%&key=AIzaSyBTt12mz1Juzfofd5eBcCk6sg3wGk9HDNM"
+               }
+            },
+            "securityProductOptions": {
+               "cacheEnabled": true,
+               "cacheTimeoutMinutes": 30,
+               "cacheExpiryHours": 240,
+               "suppressAntispywareTimeoutSeconds": 30,
+               "suppressAntivirusTimeoutSeconds": 30,
+               "suppressFirewallTimeoutSeconds": 0
+            }
+         },
+         "categories": [],
+         "queries": []
+      }
+   ],
+   "usecases": [],
+   "consoleVersion": "23.1.100.0",
+   "username": "SvenJansen",
+   "timestamp": "2023-09-20T10:43:16.510Z"
+}
