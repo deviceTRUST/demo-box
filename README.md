@@ -96,6 +96,11 @@ You are now ready to log on your user. Please use only the standard RDP client t
 
   - admin/dT$
 
+## Helpful Resources
+- [Getting Started - deviceTRUST Documentation](https://docs.devicetrust.com/docs/23.1/getting_started/)
+- [Reference - deviceTRUST Documentation](https://docs.devicetrust.com/docs/23.1/reference/)
+- [Architecture - deviceTRUST Documentation](https://docs.devicetrust.com/docs/23.1/architecture/)
+
 ## Support / Contribution / Feedback
 
 If you have  feedback or feel we’re missing some important details, please drop us an e-mail: demobox(at)devicetrust.com. Thank you for your support!
