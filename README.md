@@ -77,6 +77,12 @@ These Use Cases are part of the Demo-Tool
 
 ## Additional Use Cases
 
+We have integrated a few real use cases into the Demo-Box as well. You can change the properties of your client device to trigger actions in the Demo-Box
+
+- Security State: Turn of your local firewall or antivirus to change your device's security state. This will leave the user's session logged ("Conditional Workspace Access").
+
+- Process Monitoring: Run "Zoom" or "Snipping Tool" on your device to lock the user's session on the Demo-Box ("Conditional Workspace Access").
+
 ## Support / Contribution / Feedback
 
 If you have  feedback or feel we’re missing some important details, please drop us an e-mail: demobox(at)devicetrust.com. Thank you for your support!
