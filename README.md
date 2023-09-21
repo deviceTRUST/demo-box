@@ -34,7 +34,14 @@ The script will install everything required for your Demo-Box implementation. Yo
 
 ## License
 
-A valid license is required and needs to be added to the configuration before you can use the Demo-Box. Feel free to use your existing customer or NFR license. If you do not have a license you can use here, feel free to check out our community program (devicetrust.com/community) or see our website for an evaluation license: devicetrust.com/test-the-software. 
+A valid license is required and needs to be added to the configuration before you can use the Demo-Box. Feel free to use your existing customer or NFR license. If you do not have a license you can use here, feel free to check out our community program (devicetrust.com/community) or request an evaluation licens on our website: devicetrust.com/test-the-software.
+
+Add the license to you configuration by
+
+#### Opening the deviceTRUST Console
+#### Opening the deviceTRUST Console
+#### Opening the deviceTRUST Console
+#### Opening the deviceTRUST Console
 
 ## Prepare your local device
 
