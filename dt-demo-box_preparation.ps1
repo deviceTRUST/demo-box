@@ -68,7 +68,7 @@ if (($DomainJoinedServerQuery -eq $false) -and ($OSBuildNumber -ge "14393") -and
     Write-Host ""
 
     $ProgressPreference = 'SilentlyContinue'
-    Invoke-WebRequest -Uri "https://storage.devicetrust.com/demo/dt-demo-box.zip" -OutFile "$PathTransfer\dt-demo-box.zip"
+    Invoke-WebRequest -Uri "https://github.com/deviceTRUST/demo-box/raw/main/dt-demo-box.zip" -OutFile "$PathTransfer\dt-demo-box.zip"
 
   }
 
