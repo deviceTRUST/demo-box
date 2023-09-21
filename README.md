@@ -78,15 +78,11 @@ Our Demo-Box is designed to work with the Demo-Tool. Please start the Demo-Tool 
 
 These Use Cases are part of the Demo-Tool
 
-- Conditional Workspace Access: Allows or disallows access to the user's session on the Demo-Box based on either the Security State or connected USB Sticks.
-
-- Conditional Application Access: Closes example applications (Wordpad or Notepad++) inside the user's session based on the device's network connection or location.
-
-- Conditional Configuration: Maps printers according to the user's location or controls the session's screensaver based on the device's configuration.
-
 | Element | Screenshot |
 | ------- | ---------- |
-| Conditional Workspace Access: | <img src="./sources/images/licensing_01_start-console.png" alt="Start the deviceTRUST Console" width="300">|
+| Conditional Workspace Access: Allows or disallows access to the user's session on the Demo-Box based on either the Security State or connected USB Sticks. | <img src="./sources/images/licensing_01_start-console.png" alt="Start the deviceTRUST Console" width="300">|
+| Conditional Application Access: Closes example applications (Wordpad or Notepad++) inside the user's session based on the device's network connection or location. | <img src="./sources/images/licensing_01_start-console.png" alt="Start the deviceTRUST Console" width="300">|
+| Conditional Configuration: Maps printers according to the user's location or controls the session's screensaver based on the device's configuration. | <img src="./sources/images/licensing_01_start-console.png" alt="Start the deviceTRUST Console" width="300">|
 
 ## Additional Use Cases
 
