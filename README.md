@@ -30,7 +30,7 @@ This guide will walk you through the process of converting a simple standalone M
 $DemoBoxScriptPreparation = Invoke-WebRequest https://raw.githubusercontent.com/deviceTRUST/demo-box/main/dt-demo-box_preparation.ps1
 Invoke-Expression $($DemoBoxScriptPreparation.Content)
 
-$DemoBoxScriptInstallation = Invoke-WebRequest https://raw.githubusercontent.com/deviceTRUST/demo-box/main/dt-demo-box_preparation.ps1
+$DemoBoxScriptInstallation = Invoke-WebRequest https://raw.githubusercontent.com/deviceTRUST/demo-box/main/dt-demo-box_configuration.ps1
 Invoke-Expression $($DemoBoxScriptInstallation.Content)
 
 
