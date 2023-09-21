@@ -1,1 +1,0 @@
-MsgBox "Can I run my own VBScript?"

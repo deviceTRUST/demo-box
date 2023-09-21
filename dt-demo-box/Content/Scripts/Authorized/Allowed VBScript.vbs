@@ -1,1 +1,0 @@
-MsgBox "Can run allowed VBScript!"

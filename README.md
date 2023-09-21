@@ -44,8 +44,8 @@ The script will install everything required for your Demo-Box implementation. Yo
 
 A valid license needs to be added to the configuration before you can start using the Demo-Box. Feel free to utilize your existing customer or NFR license. If you do not have a license available, [check out our community program](https://devicetrust.com/community) or [request an evaluation license](https://devicetrust.com/test-the-software) on our website.
 
-| **Element** | **Screenshot** |
-| ----------- | -------------- |
+| **Step** | **Screenshot** |
+| -------- | -------------- |
 |To add the license into the deviceTRUST policy open the deviceTRUST Console from the start menu.|<img src="./sources/images/licensing_01_start-console.png" alt="Start the deviceTRUST Console" width="400">|
 |Select "Open Local Policy"|<img src="./sources/images/licensing_02_open-policy.png" alt="Open Local Policy" width="400">|
 |Select the policy file (c:\ProgramData\deviceTRUST\Policy\dt-demo-box.dtpol)|<img src="./sources/images/licensing_03_open-policy-file.png" alt="Select the policy file" width="400">|
@@ -72,8 +72,8 @@ Our Demo-Box is designed to work with the Demo-Tool. Please start the Demo-Tool 
 
 These Use Cases are integrated in the Demo-Tool
 
-| **Element** | **Screenshot** |
-| ----------- | -------------- |
+| **Use Case** | **Screenshot** |
+| ------------ | -------------- |
 | **Conditional Workspace Access:** Allows or disallows access to the user's session on the Demo-Box based on either the Security State or connected USB Sticks. | <img src="./sources/images/demotool_01_condwsacc.png" alt="Start the deviceTRUST Console" width="400">|
 | **Conditional Application Access:** Closes example applications (Wordpad or Notepad++) inside the user's session based on the device's network connection or location. | <img src="./sources/images/demotool_02_condappacc.png" alt="Start the deviceTRUST Console" width="400">|
 | **Conditional Configuration:** Maps printers according to the user's location or controls the session's screensaver based on the device's configuration. | <img src="./sources/images/demotool_03_condconf.png" alt="Start the deviceTRUST Console" width="400">|
