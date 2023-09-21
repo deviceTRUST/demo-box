@@ -25,10 +25,8 @@ The deviceTRUST Demo-Box comes with our deviceTRUST Demo-Tool. The Demo-Tool is 
   - Microsoft Server 2016, 2019 or 2022 
 
   - 2 vCPUs, min. 2 GB RAM, 60 GB hard disk
-  
-  - Please prepare an updated Windows Server machine. It needs to be in a workgroup. No other requirements. The deviceTRUST Demo-Box process will implement all necessary changes and customizations. Please apply all personal changes (e.g., server name) after finishing the setup.
 
-- Feel free to check the provided scripts for the tasks it includes before starting if you have security concerns.
+  - Please prepare an updated Windows Server machine. It needs to be in a workgroup. No other requirements. The deviceTRUST Demo-Box process will implement all necessary changes and customizations. Please apply all personal changes (e.g., server name) after finishing the setup.
 
 ## Installation
 
@@ -43,10 +41,10 @@ The script will install everything required for your Demo-Box implementation. Yo
 ## License
 
 A valid license is required and needs to be added to the configuration before you can use the Demo-Box. Feel free to use your existing customer or NFR license. If you do not have a license you can use here, feel free to check out our community program (devicetrust.com/community) or request an evaluation licens on our website: devicetrust.com/test-the-software.
-
+```
 - To add the license into the deviceTRUST policy open the deviceTRUST Console from the start menu.
 <img src="./sources/images/licensing_01_start-console.png" alt="Start the deviceTRUST Console" width="300">
-
+```
 - Select "Open Local Policy"
 <img src="./sources/images/licensing_02_open-policy.png" alt="Open Local Policy" width="300">
 
@@ -62,13 +60,11 @@ A valid license is required and needs to be added to the configuration before yo
 - The Console will display a valid license now. Save the changed configuration. 
 <img src="./sources/images/licensing_06_save.png" alt="Save your changes." width="300">
 
-## Prepare your local device
+## Local device preparation
 
 - Copy the folder deviceTRUST Demo-Box from the administrator’s desktop to the PC which will act as the remote device.
 
 - The folder contains all the necessary resources to connect to the Demo-Box with the user “demo” via RDP.
-
-  - The Subfolder “RDP Files” contains RDP files for different screen resolutions which needs to be executed to establish the RDP connection and to sign into the Microsoft Server using the user “demo”.
 
   - The Subfolder “Demo Tool” contains the deviceTRUST Demo-Tool which needs to be started before connecting to the Demo-Box via RDP.
 
