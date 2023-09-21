@@ -38,6 +38,7 @@ A valid license is required and needs to be added to the configuration before yo
 
 - To add the license into the deviceTRUST policy open the deviceTRUST Console from the start menu.
 ![Start the deviceTRUST Console](./sources/images/licensing_01_start-console.png)
+<img src="./sources/images/licensing_01_start-console.png" alt="Start the deviceTRUST Console" width="50" height="50">
 - There, click on the UNLICENSED link on the upper right corner.
 
 ## Prepare your local device
