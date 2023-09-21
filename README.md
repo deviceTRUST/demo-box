@@ -37,10 +37,17 @@ The script will install everything required for your Demo-Box implementation. Yo
 A valid license is required and needs to be added to the configuration before you can use the Demo-Box. Feel free to use your existing customer or NFR license. If you do not have a license you can use here, feel free to check out our community program (devicetrust.com/community) or request an evaluation licens on our website: devicetrust.com/test-the-software.
 
 - To add the license into the deviceTRUST policy open the deviceTRUST Console from the start menu.
-![Start the deviceTRUST Console](./sources/images/licensing_01_start-console.png)
 <img src="./sources/images/licensing_01_start-console.png" alt="Start the deviceTRUST Console" width="200">
-- There, click on the UNLICENSED link on the upper right corner.
-
+- Select "Open Local Policy"
+<img src="./sources/images/licensing_02_open-policy.png" alt="Open Local Policy" width="200">
+- Select the policy file (c:\ProgramData\deviceTRUST\Policy\dt-demo-box.dtpol)
+<img src="./sources/images/licensing_03_open-policy-file.png" alt="Select the policy file" width="200">
+- Back in the Console, click the UNLICENSED link on the upper right corner.
+<img src="./sources/images/licensing_04_unlicensed" alt="Click the UNLICENSED link on the upper right corner." width="200">
+- Add your license key into the license box.
+<img src="./sources/images/licensing_05_license-added.png" alt="License Box" width="200">
+- The Console will display a valid license now. Save the changed configuration. 
+<img src="./sources/images/licensing_06_save.png" alt="Save your changes." width="200">
 ## Prepare your local device
 
 - Copy the folder deviceTRUST Demo-Box from the administrator’s desktop to the PC which will act as the remote device.
