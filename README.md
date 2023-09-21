@@ -12,8 +12,6 @@ The deviceTRUST Demo-Box comes with our deviceTRUST Demo-Tool. The Demo-Tool is 
 
 This guide will walk you through the process of converting a simple standalone Microsoft Server into a fully functioning demo environment, which provides you with all the resources you need to demonstrate the deviceTRUST solution.
 
-## Demo-Tool
-
 ## Before you start
 
 - VM Prerequisites
@@ -29,6 +27,12 @@ This guide will walk you through the process of converting a simple standalone M
 
 $DemoBoxScriptPreparation = Invoke-WebRequest https://raw.githubusercontent.com/deviceTRUST/demo-box/main/dt-demo-box.ps1
 Invoke-Expression $($DemoBoxScriptPreparation.Content)
+
+## License
+
+## Usage
+
+## Demo-Tool
 
 ## Support / Contribution / Feedback
 If you have any feedback or feel we’re missing some important details, please don’t hesitate to contact us at support@devicetrust.com. Thank you for your support!
