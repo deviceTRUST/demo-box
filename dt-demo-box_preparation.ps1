@@ -72,54 +72,40 @@ if (($DomainJoinedServerQuery -eq $false) -and ($OSBuildNumber -ge "14393") -and
 
   }
 
-  [string]$DownloadedZipFileHash = (Get-FileHash -Path "$PathTransfer\dt-demo-box.zip" -Algorithm SHA256).Hash
-  
-  if ($DownloadedZipFileHash -eq $deviceTRUSTDemoBoxDownloadHash) {
+  # Unzip 'deviceTRUST Demo-Box' setup file
+  Clear-Host
+  Write-Host ""
+  Write-Host " ------------------------------------------------------------------------------------------"
+  Write-Host " | deviceTRUST Demo-Box preparation script                                                |"
+  Write-Host " ------------------------------------------------------------------------------------------"
+  Write-Host ""
+  Write-Host " Task: Unzip 'deviceTRUST Demo-Box' setup file"
+  Write-Host ""      
 
-    # Unzip 'deviceTRUST Demo-Box' setup file
-    Clear-Host
-    Write-Host ""
-    Write-Host " ------------------------------------------------------------------------------------------"
-    Write-Host " | deviceTRUST Demo-Box preparation script                                                |"
-    Write-Host " ------------------------------------------------------------------------------------------"
-    Write-Host ""
-    Write-Host " Task: Unzip 'deviceTRUST Demo-Box' setup file"
-    Write-Host ""      
+  # Unzip 'deviceTRUST Demo-Box' archive
+  if (Test-Path -Path "$PathDemoBox") {Remove-Item -Path "$PathDemoBox" -Recurse -Force}
+  Expand-Archive -Path "$PathTransfer\dt-demo-box.zip" -DestinationPath "$PathTransfer" -Force
+  Remove-Item -Path "$PathTransfer\dt-demo-box.zip" -Force
 
-    # Unzip 'deviceTRUST Demo-Box' archive
-    if (Test-Path -Path "$PathDemoBox") {Remove-Item -Path "$PathDemoBox" -Recurse -Force}
-    Expand-Archive -Path "$PathTransfer\dt-demo-box.zip" -DestinationPath "$PathTransfer" -Force
-    Remove-Item -Path "$PathTransfer\dt-demo-box.zip" -Force
+  # Preparation successful. The local machine is now ready for the second step.
+  Clear-Host
+  Write-Host ""
+  Write-Host " ------------------------------------------------------------------------------------------"
+  Write-Host " | deviceTRUST Demo-Box preparation script                                                |"
+  Write-Host " ------------------------------------------------------------------------------------------"
+  Write-Host ""
+  Write-Host " Info: Preparation successful." -ForegroundColor DarkGreen
+  Write-Host ""
+  Write-Host " Task: Run configuration or navigate to '$PathDemoBox' and start the script 'dt-demo-box_configuration.ps1' manually."
+  Write-Host ""
 
-    # Preparation successful. The local machine is now ready for the second step.
-    Clear-Host
-    Write-Host ""
-    Write-Host " ------------------------------------------------------------------------------------------"
-    Write-Host " | deviceTRUST Demo-Box preparation script                                                |"
-    Write-Host " ------------------------------------------------------------------------------------------"
-    Write-Host ""
-    Write-Host " Info: Preparation successful." -ForegroundColor DarkGreen
-    Write-Host ""
-    Write-Host " Task: Run configuration or navigate to '$PathDemoBox' and start the script 'dt-demo-box_configuration.ps1' manually."
-    Write-Host ""
-
-    $confirmation = Read-Host "Do you want to run the configuration script now (y/n)?"
-    if ($confirmation -eq 'y') {
-        &"$PathDemoBox/dt-demo-box_configuration.ps1"
-    }
-
-    Read-Host " Press any key to close the script"
-
-  } else {
-
-    Write-Host " Hashes do not match." -ForegroundColor Red
-    Write-Host ""
-    Write-Host " Please download correct sources and try again." -ForegroundColor DarkGreen
-    Write-Host ""   
-
-    Read-Host " Press any key to close the script"         
-
+  $confirmation = Read-Host "Do you want to run the configuration script now (y/n)?"
+  if ($confirmation -eq 'y') {
+      &"$PathDemoBox/dt-demo-box_configuration.ps1"
   }
+
+  Read-Host " Press any key to close the script"
+
 
 } else {
 
