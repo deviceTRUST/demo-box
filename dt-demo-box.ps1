@@ -312,9 +312,6 @@ if (($DomainJoinedServerQuery -eq $false) -and ($OSBuildNumber -ge "14393")) {
   New-Item -ItemType directory -Name "Presentation" -Path "$env:USERPROFILE\Desktop\deviceTRUST Demo-Box" -Force
   Copy-Item -Path "$PathDemoBox\Content\Presentation\*" -Destination "$env:USERPROFILE\Desktop\deviceTRUST Demo-Box\Presentation" -Force
 
-  New-Item -ItemType directory -Name "RDP Files" -Path "$env:USERPROFILE\Desktop\deviceTRUST Demo-Box" -Force
-  Copy-Item -Path "$PathDemoBox\Content\RDP Files\Demo*.rdp" -Destination "$env:USERPROFILE\Desktop\deviceTRUST Demo-Box\RDP Files" -Force
-
   New-Item -ItemType directory -Name "Links" -Path "$env:USERPROFILE\Favorites\" -Force
   Copy-Item -Path "$PathDemoBox\Content\Favorites\Business Web App.url" -Destination "$env:USERPROFILE\Favorites\Links\Business Web App.url" -Force
 
