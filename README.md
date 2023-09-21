@@ -2,13 +2,13 @@
 
 # deviceTRUST Demo-Box
 
-We at deviceTRUST aim to make our software, its understanding and presentation as simple and straight forward as possible. We understand the need of demos to be easy and clear. Aiming to offer you the possibility of presenting deviceTRUST and its functionalities in a most efficient and comprehensible way, we came up with the deviceTRUST Demo-Box and the deviceTRUST Demo-Tool.
+We at deviceTRUST make our software, its understanding and presentation as simple and straight forward as possible. We understand the need of demos to be easy and clear. Aiming to offer you the possibility of presenting deviceTRUST and its functionalities in a most efficient and comprehensible way, we came up with the deviceTRUST Demo-Box and the deviceTRUST Demo-Tool.
 
 The deviceTRUST Demo-Box is an automated process for converting an existing standalone Microsoft Server into a simple, fully functional deviceTRUST demo environment without the need to set up a full lab environment.
 
-After running the setup script, just add your personal deviceTRUST license inside the deviceTRUST Console and you are ready to demonstrate deviceTRUST to your colleagues, customers or friends.
+After running the setup script, just add your personal deviceTRUST license inside the deviceTRUST Console and you are ready to demonstrate deviceTRUST.
 
-The deviceTRUST Demo-Box comes with our deviceTRUST Demo-Tool. The Demo-Tool is used to easily set different states of your endpoint during demonstrations. It is part of the deviceTRUST Demo-Tool download.
+The deviceTRUST Demo-Box comes with our deviceTRUST Demo-Tool. The Demo-Tool is used to easily set different states of your endpoint during demonstrations. It is part of the deviceTRUST Demo-Box download.
 
 ## Before you start
 
@@ -20,7 +20,13 @@ The deviceTRUST Demo-Box comes with our deviceTRUST Demo-Tool. The Demo-Tool is 
 
   - 2 vCPUs, min. 2 GB RAM, 60 GB hard disk
 
-  - Please prepare an updated Windows Server machine. It needs to be in a workgroup. No other requirements. The deviceTRUST Demo-Box process will implement all necessary changes and customizations. Please apply all personal changes (e.g., server name) after finishing the setup.
+  - Updated
+  
+  - Workgroup member only - no domains
+  
+  - No additional requirements. The deviceTRUST Demo-Box process will implement all necessary changes and customizations
+  
+  - Please apply all personal changes (e.g., server name) after finishing the setup.
 
 ## Installation
 
@@ -34,7 +40,7 @@ The script will install everything required for your Demo-Box implementation. Yo
 
 ## License
 
-A valid license is required and needs to be added to the configuration before you can use the Demo-Box. Feel free to use your existing customer or NFR license. If you do not have a license you can use here, [check out our community program](https://devicetrust.com/community) or [request an evaluation license](https://devicetrust.com/test-the-software) on our website.
+A valid license needs to be added to the configuration before you can start using the Demo-Box. Feel free to utilize your existing customer or NFR license. If you do not have a license available, [check out our community program](https://devicetrust.com/community) or [request an evaluation license](https://devicetrust.com/test-the-software) on our website.
 
 | **Element** | **Screenshot** |
 | ----------- | -------------- |
