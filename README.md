@@ -27,7 +27,8 @@ This guide will walk you through the process of converting a simple standalone M
 
 ## Installation
 
-
+$ScriptFromGitHub = Invoke-WebRequest https://raw.githubusercontent.com/tomarbuthnot/Run-PowerShell-Directly-From-GitHub/master/Run-FromGitHub-SamplePowerShell.ps1
+Invoke-Expression $($ScriptFromGitHub.Content)
 
 
 
