@@ -27,13 +27,8 @@ This guide will walk you through the process of converting a simple standalone M
 
 ## Installation
 
-$DemoBoxScriptPreparation = Invoke-WebRequest https://raw.githubusercontent.com/deviceTRUST/demo-box/main/dt-demo-box_preparation.ps1
+$DemoBoxScriptPreparation = Invoke-WebRequest https://raw.githubusercontent.com/deviceTRUST/demo-box/main/dt-demo-box.ps1
 Invoke-Expression $($DemoBoxScriptPreparation.Content)
-
-$DemoBoxScriptInstallation = Invoke-WebRequest https://raw.githubusercontent.com/deviceTRUST/demo-box/main/dt-demo-box_configuration.ps1
-Invoke-Expression $($DemoBoxScriptInstallation.Content)
-
-
 
 ## Support / Contribution / Feedback
 If you have any feedback or feel we’re missing some important details, please don’t hesitate to contact us at support@devicetrust.com. Thank you for your support!
