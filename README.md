@@ -34,7 +34,7 @@ The script will install everything required for your Demo-Box implementation. Yo
 
 ## License
 
-A valid license is required and needs to be added to the configuration before you can use the Demo-Box. Feel free to use your existing customer or NFR license. If you do not have a license you can use here, [check out our community program](devicetrust.com/community) or [request an evaluation license](devicetrust.com/test-the-software) on our website.
+A valid license is required and needs to be added to the configuration before you can use the Demo-Box. Feel free to use your existing customer or NFR license. If you do not have a license you can use here, [check out our community program](https://devicetrust.com/community) or [request an evaluation license](https://devicetrust.com/test-the-software) on our website.
 
 | Element | Screenshot |
 | ------- | ---------- |
