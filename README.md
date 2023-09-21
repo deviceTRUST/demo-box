@@ -15,12 +15,17 @@ The deviceTRUST Demo-Box comes with our deviceTRUST Demo-Tool. The Demo-Tool is 
 - Client Prerequisites: For now, the Demo-Box is only usable with a Windows based client. Our Demo-Tool can only be executed on Windows based devices and is required for utilizing the Demo-Box.
 
 - Default credentials
+
   - user/dT$
+
   - admin/dT$
 
 - VM Prerequisites
+
   - Microsoft Server 2016, 2019 or 2022 
+
   - 2 vCPUs, min. 2 GB RAM, 60 GB hard disk
+  
   - Please prepare an updated Windows Server machine. It needs to be in a workgroup. No other requirements. The deviceTRUST Demo-Box process will implement all necessary changes and customizations. Please apply all personal changes (e.g., server name) after finishing the setup.
 
 - Feel free to check the provided scripts for the tasks it includes before starting if you have security concerns.
@@ -66,7 +71,7 @@ A valid license is required and needs to be added to the configuration before yo
   - The Subfolder “RDP Files” contains RDP files for different screen resolutions which needs to be executed to establish the RDP connection and to sign into the Microsoft Server using the user “demo”.
 
   - The Subfolder “Demo Tool” contains the deviceTRUST Demo-Tool which needs to be started before connecting to the Demo-Box via RDP.
-  
+
   - The Subfolder “Presentation” contains the deviceTRUST corporate slide deck in English and German language.
 
 ## Demo-Tool
