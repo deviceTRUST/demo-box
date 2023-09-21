@@ -2281,6 +2281,61 @@
    "messages": [],
    "settings": [
       {
+         "type": "CustomProperties",
+         "settingsEnabled": true,
+         "enabled": false,
+         "runAs": "User",
+         "delayUntilPropertiesAvailable": false,
+         "captureOutput": false,
+         "timeout": 300,
+         "failureDetection": "Exit Code",
+         "embeddedScript": "# Example PowerShell to create a LOCAL_CUSTOM_EXAMPLE property\r\n$exampleValue=$env:USERNAME\r\nWrite-Host \"LOCAL_CUSTOM_EXAMPLE=$exampleValue\"",
+         "embeddedScriptTarget": "PowerShell",
+         "powerShellExecutionPolicy": "NotSpecified",
+         "bypassAppLockerPolicy": false,
+         "localDelayUntilPropertiesAvailable": false,
+         "localPersistAcrossReconnects": false,
+         "localHashProperties": false,
+         "remoteWindowsProcess": {
+            "enabled": true,
+            "runAs": "Current",
+            "timeout": 0,
+            "failureDetection": "Exit Code And Error Message",
+            "embeddedScript": "while($true){\n\n    $TeamsProcess = Get-Process 'Teams' -ErrorAction Ignore\n    Write-Host \"REMOTE_CUSTOM_TEAMS_RUNNING=$($TeamsProcess.Length -gt 0)\"\n\n    $zoomProcess = Get-Process 'Zoom' -ErrorAction Ignore\n    Write-Host \"REMOTE_CUSTOM_ZOOM_RUNNING=$($zoomProcess.Length -gt 0)\"\n\n    $snippingProcess = Get-Process 'snipp*' -ErrorAction Ignore\n    Write-Host \"REMOTE_CUSTOM_SNIP_RUNNING=$($snippingProcess.Length -gt 0)\"\n\n    Write-Host \"CONTINUE\"\n\n    Sleep -Seconds 1\n\n}",
+            "embeddedScriptTarget": "PowerShell",
+            "powerShellExecutionPolicy": "Unrestricted",
+            "bypassAppLockerPolicy": false,
+            "hashProperties": false
+         },
+         "remoteIgelProcess": {
+            "enabled": false,
+            "runAs": "Current",
+            "timeout": 300,
+            "failureDetection": "Exit Code",
+            "embeddedScript": "#!/bin/bash\n echo REMOTE_CUSTOM_EXAMPLE=$(whoami)\n",
+            "embeddedScriptTarget": "Unknown",
+            "hashProperties": false
+         },
+         "remoteNoTouchProcess": {
+            "enabled": false,
+            "runAs": "Current",
+            "timeout": 300,
+            "failureDetection": "Exit Code",
+            "embeddedScript": "#!/bin/bash\necho REMOTE_CUSTOM_EXAMPLE=$(whoami)\n",
+            "embeddedScriptTarget": "Unknown",
+            "hashProperties": false
+         },
+         "remoteLinuxProcess": {
+            "enabled": false,
+            "runAs": "Current",
+            "timeout": 300,
+            "failureDetection": "Exit Code",
+            "embeddedScript": "#!/bin/bash\n echo REMOTE_CUSTOM_EXAMPLE=$(whoami)\n",
+            "embeddedScriptTarget": "Unknown",
+            "hashProperties": false
+         }
+      },
+      {
          "type": "AppLocker",
          "enabled": true,
          "rules": [
@@ -2451,111 +2506,16 @@
          ]
       },
       {
-         "type": "CustomProperties",
-         "settingsEnabled": true,
-         "enabled": false,
-         "runAs": "User",
-         "delayUntilPropertiesAvailable": false,
-         "captureOutput": false,
-         "timeout": 300,
-         "failureDetection": "Exit Code",
-         "embeddedScript": "# Example PowerShell to create a LOCAL_CUSTOM_EXAMPLE property\r\n$exampleValue=$env:USERNAME\r\nWrite-Host \"LOCAL_CUSTOM_EXAMPLE=$exampleValue\"",
-         "embeddedScriptTarget": "PowerShell",
-         "powerShellExecutionPolicy": "NotSpecified",
-         "bypassAppLockerPolicy": false,
-         "localDelayUntilPropertiesAvailable": false,
-         "localPersistAcrossReconnects": false,
-         "localHashProperties": false,
-         "remoteWindowsProcess": {
-            "enabled": true,
-            "runAs": "Current",
-            "timeout": 0,
-            "failureDetection": "Exit Code And Error Message",
-            "embeddedScript": "while($true){\n\n    $TeamsProcess = Get-Process 'Teams' -ErrorAction Ignore\n    Write-Host \"REMOTE_CUSTOM_TEAMS_RUNNING=$($TeamsProcess.Length -gt 0)\"\n\n    $zoomProcess = Get-Process 'Zoom' -ErrorAction Ignore\n    Write-Host \"REMOTE_CUSTOM_ZOOM_RUNNING=$($zoomProcess.Length -gt 0)\"\n\n    $snippingProcess = Get-Process 'snipp*' -ErrorAction Ignore\n    Write-Host \"REMOTE_CUSTOM_SNIP_RUNNING=$($snippingProcess.Length -gt 0)\"\n\n    Write-Host \"CONTINUE\"\n\n    Sleep -Seconds 1\n\n}",
-            "embeddedScriptTarget": "PowerShell",
-            "powerShellExecutionPolicy": "Unrestricted",
-            "bypassAppLockerPolicy": false,
-            "hashProperties": false
-         },
-         "remoteIgelProcess": {
-            "enabled": false,
-            "runAs": "Current",
-            "timeout": 300,
-            "failureDetection": "Exit Code",
-            "embeddedScript": "#!/bin/bash\n echo REMOTE_CUSTOM_EXAMPLE=$(whoami)\n",
-            "embeddedScriptTarget": "Unknown",
-            "hashProperties": false
-         },
-         "remoteNoTouchProcess": {
-            "enabled": false,
-            "runAs": "Current",
-            "timeout": 300,
-            "failureDetection": "Exit Code",
-            "embeddedScript": "#!/bin/bash\necho REMOTE_CUSTOM_EXAMPLE=$(whoami)\n",
-            "embeddedScriptTarget": "Unknown",
-            "hashProperties": false
-         },
-         "remoteLinuxProcess": {
-            "enabled": false,
-            "runAs": "Current",
-            "timeout": 300,
-            "failureDetection": "Exit Code",
-            "embeddedScript": "#!/bin/bash\n echo REMOTE_CUSTOM_EXAMPLE=$(whoami)\n",
-            "embeddedScriptTarget": "Unknown",
-            "hashProperties": false
-         }
-      },
-      {
          "type": "Printer",
          "enabled": true,
          "maxNumberOfRetries": 5,
          "retryIntervalInSeconds": 1,
          "letPrintSpoolerManageNetworkPrinters": false,
          "letWindowsManageDefaultPrinter": false
-      },
-      {
-         "type": "Properties",
-         "enabled": true,
-         "options": {
-            "persistToEventLog": true,
-            "persistToRegistry": true,
-            "persistToEnvironment": true,
-            "persistToCommandPrompt": true,
-            "forwardRemoteProperties": false,
-            "whoisOptions": {
-               "enabledUsers": [],
-               "disabledUsers": [],
-               "doNotManageInternalUsers": false,
-               "preferPhysicalAdapter": false
-            },
-            "locationOptions": {
-               "enabledUsers": [],
-               "disabledUsers": [],
-               "doNotManageInternalUsers": false,
-               "thirdPartyPositionOptions": {
-                  "providerUrl": "https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyBTt12mz1Juzfofd5eBcCk6sg3wGk9HDNM",
-                  "preferOS": false,
-                  "timeout": 5
-               },
-               "thirdPartyAddressOptions": {
-                  "providerUrl": "\t• https://maps.googleapis.com/maps/api/geocode/json?latlng=%LAT%,%LNG%&key=AIzaSyBTt12mz1Juzfofd5eBcCk6sg3wGk9HDNM"
-               }
-            },
-            "securityProductOptions": {
-               "cacheEnabled": true,
-               "cacheTimeoutMinutes": 30,
-               "cacheExpiryHours": 240,
-               "suppressAntispywareTimeoutSeconds": 30,
-               "suppressAntivirusTimeoutSeconds": 30,
-               "suppressFirewallTimeoutSeconds": 0
-            }
-         },
-         "categories": [],
-         "queries": []
       }
    ],
    "usecases": [],
    "consoleVersion": "23.1.100.0",
    "username": "SvenJansen",
-   "timestamp": "2023-09-20T10:43:16.510Z"
+   "timestamp": "2023-09-21T07:51:12.152Z"
 }
