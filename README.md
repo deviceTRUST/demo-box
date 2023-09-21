@@ -25,10 +25,11 @@ This guide will walk you through the process of converting a simple standalone M
 - Feel free to check the provided scripts for the tasks it includes before starting if you have security concerns.
 
 ## Installation
+
 ```powershell
-$DemoBoxScriptPreparation = Invoke-WebRequest https://raw.githubusercontent.com/deviceTRUST/demo-box/main/dt-demo-box.ps1
-Invoke-Expression $($DemoBoxScriptPreparation.Content)
+Invoke-Expression $((Invoke-WebRequest https://raw.githubusercontent.com/deviceTRUST/demo-box/main/dt-demo-box.ps1).content)
 ```
+
 ## License
 A valid license is required and needs to be added to the configuration before you can use the Demo-Box. Feel free to use your existing customer or NFR license. If you do not have a license you can use here, feel free to check out our community program (devicetrust.com/community) or see our website for an evaluation license: devicetrust.com/test-the-software. 
 
