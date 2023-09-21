@@ -43,22 +43,22 @@ The script will install everything required for your Demo-Box implementation. Yo
 A valid license is required and needs to be added to the configuration before you can use the Demo-Box. Feel free to use your existing customer or NFR license. If you do not have a license you can use here, feel free to check out our community program (devicetrust.com/community) or request an evaluation license on our website: devicetrust.com/test-the-software.
 
 - To add the license into the deviceTRUST policy open the deviceTRUST Console from the start menu.
-<img src="./sources/images/licensing_01_start-console.png" alt="Start the deviceTRUST Console" "400">
+<img src="./sources/images/licensing_01_start-console.png" alt="Start the deviceTRUST Console" width="400">
 
 - Select "Open Local Policy"
-<img src="./sources/images/licensing_02_open-policy.png" alt="Open Local Policy" "400">
+<img src="./sources/images/licensing_02_open-policy.png" alt="Open Local Policy" width="400">
 
 - Select the policy file (c:\ProgramData\deviceTRUST\Policy\dt-demo-box.dtpol)
-<img src="./sources/images/licensing_03_open-policy-file.png" alt="Select the policy file" "400">
+<img src="./sources/images/licensing_03_open-policy-file.png" alt="Select the policy file" width="400">
 
 - Back in the Console, click the UNLICENSED link on the upper right corner.
-<img src="./sources/images/licensing_04_unlicensed" alt="Click the UNLICENSED link on the upper right corner." "400">
+<img src="./sources/images/licensing_04_unlicensed" alt="Click the UNLICENSED link on the upper right corner." width="400">
 
 - Add your license key into the license box.
-<img src="./sources/images/licensing_05_license-added.png" alt="License Box" "400">
+<img src="./sources/images/licensing_05_license-added.png" alt="License Box" width="400">
 
 - The Console will display a valid license now. Save the changed configuration. 
-<img src="./sources/images/licensing_06_save.png" alt="Save your changes." "400">
+<img src="./sources/images/licensing_06_save.png" alt="Save your changes." width="400">
 
 ## Local device preparation
 
@@ -80,9 +80,9 @@ These Use Cases are part of the Demo-Tool
 
 | Element | Screenshot |
 | ------- | ---------- |
-| Conditional Workspace Access: Allows or disallows access to the user's session on the Demo-Box based on either the Security State or connected USB Sticks. | <img src="./sources/images/demotool_01_condwsacc.png" alt="Start the deviceTRUST Console" "400">|
-| Conditional Application Access: Closes example applications (Wordpad or Notepad++) inside the user's session based on the device's network connection or location. | <img src="./sources/images/demotool_02_condappacc.png" alt="Start the deviceTRUST Console" "400">|
-| Conditional Configuration: Maps printers according to the user's location or controls the session's screensaver based on the device's configuration. | <img src="./sources/images/demotool_03_condconf.png" alt="Start the deviceTRUST Console" "400">|
+| Conditional Workspace Access: Allows or disallows access to the user's session on the Demo-Box based on either the Security State or connected USB Sticks. | <img src="./sources/images/demotool_01_condwsacc.png" alt="Start the deviceTRUST Console" width="400">|
+| Conditional Application Access: Closes example applications (Wordpad or Notepad++) inside the user's session based on the device's network connection or location. | <img src="./sources/images/demotool_02_condappacc.png" alt="Start the deviceTRUST Console" width="400">|
+| Conditional Configuration: Maps printers according to the user's location or controls the session's screensaver based on the device's configuration. | <img src="./sources/images/demotool_03_condconf.png" alt="Start the deviceTRUST Console" width="400">|
 
 ## Additional Use Cases
 
