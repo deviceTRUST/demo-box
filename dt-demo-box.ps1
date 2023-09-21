@@ -86,23 +86,6 @@ if (($DomainJoinedServerQuery -eq $false) -and ($OSBuildNumber -ge "14393")) {
   Expand-Archive -Path "$PathTransfer\dt-demo-box.zip" -DestinationPath "$PathTransfer" -Force
   Remove-Item -Path "$PathTransfer\dt-demo-box.zip" -Force
 
-  # Preparation successful. The local machine is now ready for the second step.
-  Clear-Host
-  Write-Host ""
-  Write-Host " ------------------------------------------------------------------------------------------"
-  Write-Host " | deviceTRUST Demo-Box installation script                                               |"
-  Write-Host " ------------------------------------------------------------------------------------------"
-  Write-Host ""
-  Write-Host " Info: Preparation successful." -ForegroundColor DarkGreen
-  Write-Host ""
-  Write-Host " Task: Run configuration or navigate to '$PathDemoBox' and start the script 'dt-demo-box_configuration.ps1' manually."
-  Write-Host ""
-
-  $confirmation = Read-Host "Do you want to run the configuration script now (y/n)?"
-  if ($confirmation -eq 'y') {
-      &"$PathDemoBox/dt-demo-box_configuration.ps1"
-  }
-
   # Rename 'System Drive'
   Clear-Host
   Write-Host ""
