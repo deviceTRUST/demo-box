@@ -14,12 +14,6 @@ The deviceTRUST Demo-Box comes with our deviceTRUST Demo-Tool. The Demo-Tool is 
 
 - Client Prerequisites: For now, the Demo-Box is only usable with a Windows based client. Our Demo-Tool can only be executed on Windows based devices and is required for utilizing the Demo-Box.
 
-- Default credentials
-
-  - user/dT$
-
-  - admin/dT$
-
 - VM Prerequisites
 
   - Microsoft Server 2016, 2019 or 2022 
@@ -65,7 +59,7 @@ A valid license is required and needs to be added to the configuration before yo
 
 In a lab as simple as the Demo-Box, you will want to demonstrate several use cases, while not making too much fuzz or being able to change parameters like your location. The deviceTRUST Demo-Tools allows you to simulate certain property changes with a simple click. It is designed to give insight into what can be achieved with deviceTRUST - in a very simple way.
 
-Our Demo-Box is designed to work with the Demo-Tool. Please start the Demo-Tool before you connect to the Demo-Box via RDP. You'll otherwise end up with a bunch of Pop-Ups. 
+Our Demo-Box is designed to work with the Demo-Tool. Please start the Demo-Tool before you connect to the Demo-Box via RDP. You'll otherwise end up with a bunch of Pop-Ups.
 
 These Use Cases are part of the Demo-Tool
 
@@ -82,6 +76,16 @@ We have integrated a few real use cases into the Demo-Box as well. You can chang
 - Security State: Turn of your local firewall or antivirus to change your device's security state. This will leave the user's session logged ("Conditional Workspace Access").
 
 - Process Monitoring: Run "Zoom" or "Snipping Tool" on your device to lock the user's session on the Demo-Box ("Conditional Workspace Access").
+
+## First Logon
+
+You are now ready to log on your user. Enjoy!
+
+- Default credentials
+
+  - user/dT$
+
+  - admin/dT$
 
 ## Support / Contribution / Feedback
 
