@@ -12,21 +12,23 @@ The deviceTRUST Demo-Box comes with our deviceTRUST Demo-Tool. The Demo-Tool is 
 
 ## Before you start
 
+Make sure to have a prepared VM as well as a client device ready to base the Demo-Box implementation on.
+
 - Client Prerequisites: For now, the Demo-Box is only usable with a Windows based client. Our Demo-Tool can only be executed on Windows devices and is required for utilizing the Demo-Box.
 
 - VM Prerequisites
 
   - Microsoft Server 2016, 2019 or 2022 
 
-  - 2 vCPUs, min. 2 GB RAM, 60 GB hard disk
+  - 2 vCPU, 2 GB RAM, 60 GB hard disk
 
-  - Updated
+  - All Updates applied (for security reasons - you know ;))
   
   - Workgroup member only - no domains
   
-  - No additional requirements. The deviceTRUST Demo-Box process will implement all necessary changes and customizations
+No additional requirements. The deviceTRUST Demo-Box process will implement all necessary changes and customizations
   
-  - Please apply all personal changes (e.g., server name) after finishing the setup.
+Please apply all personal changes (e.g., server name) after finishing the setup.
 
 ## Installation
 
