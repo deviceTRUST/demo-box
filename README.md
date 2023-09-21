@@ -36,8 +36,8 @@ The script will install everything required for your Demo-Box implementation. Yo
 
 A valid license is required and needs to be added to the configuration before you can use the Demo-Box. Feel free to use your existing customer or NFR license. If you do not have a license you can use here, [check out our community program](https://devicetrust.com/community) or [request an evaluation license](https://devicetrust.com/test-the-software) on our website.
 
-| Element | Screenshot |
-| ------- | ---------- |
+| **Element** | **Screenshot** |
+| ----------- | -------------- |
 |To add the license into the deviceTRUST policy open the deviceTRUST Console from the start menu.|<img src="./sources/images/licensing_01_start-console.png" alt="Start the deviceTRUST Console" width="400">|
 |Select "Open Local Policy"|<img src="./sources/images/licensing_02_open-policy.png" alt="Open Local Policy" width="400">|
 |Select the policy file (c:\ProgramData\deviceTRUST\Policy\dt-demo-box.dtpol)|<img src="./sources/images/licensing_03_open-policy-file.png" alt="Select the policy file" width="400">|
@@ -49,12 +49,13 @@ A valid license is required and needs to be added to the configuration before yo
 
 - Copy the folder deviceTRUST Demo-Box from the administrator’s desktop to the PC which will act as the remote device.
 
-- The folder contains all the necessary resources to connect to the Demo-Box with the user “demo” via RDP.
+  -  The folder contains all the necessary resources to connect to the Demo-Box with the user “demo” via RDP.
 
   - The Subfolder “Demo Tool” contains the deviceTRUST Demo-Tool which needs to be started before connecting to the Demo-Box via RDP.
 
   - The Subfolder “Presentation” contains the deviceTRUST corporate slide deck in English and German language.
 
+- Install the deviceTRUST Client Extension. You can either [download it from our website](https://devicetrust.com/download) or use Chocolatey (choco install dt-clientextension --y).
 ## Demo-Tool
 
 In a lab as simple as the Demo-Box, you will want to demonstrate several use cases, while not making too much fuzz or being able to change parameters like your location. The deviceTRUST Demo-Tools allows you to simulate certain property changes with a simple click. It is designed to give insight into what can be achieved with deviceTRUST - in a very simple way.
@@ -79,7 +80,7 @@ We have integrated a few real use cases into the Demo-Box as well. You can chang
 
 ## First Logon
 
-You are now ready to log on your user. Enjoy!
+You are now ready to log on your user. Please use only the standard RDP client to do so. Enjoy!
 
 - Default credentials
 
