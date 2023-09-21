@@ -63,11 +63,11 @@ Our Demo-Box is designed to work with the Demo-Tool. Please start the Demo-Tool 
 
 These Use Cases are part of the Demo-Tool
 
-| Element | Screenshot |
-| ------- | ---------- |
-| Conditional Workspace Access: Allows or disallows access to the user's session on the Demo-Box based on either the Security State or connected USB Sticks. | <img src="./sources/images/demotool_01_condwsacc.png" alt="Start the deviceTRUST Console" width="400">|
-| Conditional Application Access: Closes example applications (Wordpad or Notepad++) inside the user's session based on the device's network connection or location. | <img src="./sources/images/demotool_02_condappacc.png" alt="Start the deviceTRUST Console" width="400">|
-| Conditional Configuration: Maps printers according to the user's location or controls the session's screensaver based on the device's configuration. | <img src="./sources/images/demotool_03_condconf.png" alt="Start the deviceTRUST Console" width="400">|
+| **Element** | **Screenshot** |
+| ----------- | -------------- |
+| **Conditional Workspace Access:** Allows or disallows access to the user's session on the Demo-Box based on either the Security State or connected USB Sticks. | <img src="./sources/images/demotool_01_condwsacc.png" alt="Start the deviceTRUST Console" width="400">|
+| **Conditional Application Access:** Closes example applications (Wordpad or Notepad++) inside the user's session based on the device's network connection or location. | <img src="./sources/images/demotool_02_condappacc.png" alt="Start the deviceTRUST Console" width="400">|
+| **Conditional Configuration:** Maps printers according to the user's location or controls the session's screensaver based on the device's configuration. | <img src="./sources/images/demotool_03_condconf.png" alt="Start the deviceTRUST Console" width="400">|
 
 ## Additional Use Cases
 
