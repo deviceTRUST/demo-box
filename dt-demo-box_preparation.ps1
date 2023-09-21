@@ -57,19 +57,6 @@ if (($DomainJoinedServerQuery -eq $false) -and ($OSBuildNumber -ge "14393") -and
 
   if(-not (Test-Path "$PathTransfer\dt-demo-box.zip")){
 
-    # Read the download file's file hash from source.
-    Clear-Host
-    Write-Host ""
-    Write-Host " ------------------------------------------------------------------------------------------"
-    Write-Host " | deviceTRUST Demo-Box preparation script                                                |"
-    Write-Host " ------------------------------------------------------------------------------------------"
-    Write-Host ""
-    Write-Host " Read the download file's file hash from source."
-    Write-Host ""
-
-    # $deviceTRUSTDemoBoxDownloadHash = (Invoke-WebRequest -Uri "https://storage.devicetrust.com/demo/dt-demo-box.txt").FileHash
-    $deviceTRUSTDemoBoxDownloadHash = "775E71D84B8CC65FFEE684B2CCCD518C66ADD279F6C42E6F96E51675F7ED8861"
-
     # Download 'deviceTRUST Demo-Box' setup file
     Clear-Host
     Write-Host ""
