@@ -47,7 +47,7 @@ A valid license needs to be added to the configuration before you can start usin
 | **Step** | **Screenshot** |
 | -------- | -------------- |
 |To add the license into the deviceTRUST policy open the deviceTRUST Console from the start menu.|<img src="./sources/images/licensing_01_start-console.png" alt="Start the deviceTRUST Console" width="400">|
-|Select "Open Local Policy"|<img src="./sources/images/licensing_02_open-policy.png" alt="Open Local Policy" width="400">|
+|Select "Open File Based Policy"|<img src="./sources/images/licensing_02_open-policy.png" alt="Open Local Policy" width="400">|
 |Select the policy file (c:\ProgramData\deviceTRUST\Policy\dt-demo-box.dtpol)|<img src="./sources/images/licensing_03_open-policy-file.png" alt="Select the policy file" width="400">|
 |Back in the Console, click the UNLICENSED link on the upper right corner.|<img src="./sources/images/licensing_04_unlicensed.png" alt="Click the UNLICENSED link on the upper right corner." width="400">|
 |Add your license key into the license box.|<img src="./sources/images/licensing_05_license-added.png" alt="License Box" width="400">|
