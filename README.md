@@ -59,9 +59,9 @@ A valid license needs to be added to the configuration before you can start usin
 
   -  The folder contains all the necessary resources to connect to the Demo-Box with the user “demo” via RDP.
 
-  - The Subfolder “Demo Tool” contains the deviceTRUST Demo-Tool which needs to be started before connecting to the Demo-Box via RDP.
+  - The folder “deviceTRUST Demo-Box" on your desktop contains the deviceTRUST Demo-Tool which needs to be started before connecting to the Demo-Box via RDP.
 
-  - The Subfolder “Presentation” contains the deviceTRUST corporate slide deck in English and German language.
+  - The subfolder “Presentation” contains the deviceTRUST corporate slide deck in English and German language.
 
 - Install the deviceTRUST Client Extension. You can either [download it from our website](https://devicetrust.com/download) or use Chocolatey (choco install dt-clientextension --y).
 ## Demo-Tool
