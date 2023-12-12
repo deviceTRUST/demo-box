@@ -208,20 +208,26 @@ if (($DomainJoinedServerQuery -eq $false) -and ($OSBuildNumber -ge "14393")) {
   Write-Host " Task: Configure 'Administrator' environment"
   Write-Host ""
 
+  # Clear the wallpaper setting for the current user's desktop
   Clear-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name "WallPaper" -Force
+
+  # Set the background color for the desktop to RGB values 74, 84, 89
   Set-ItemProperty -Path "HKCU:\Control Panel\Colors" -Name "Background" -Value "74 84 89" -Force
 
+  # Configure advanced settings for Windows Explorer
   Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "Hidden" -Value 1 -Force
   Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "HideFileExt" -Value 0 -Force
   New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "AlwaysShowMenus" -PropertyType DWord -Value 1 -Force
   New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "NavPaneExpandToCurrentFolder" -PropertyType DWord -Value 1 -Force
 
+  # Create registry entries to hide desktop icons
   New-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" -Name "HideDesktopIcons" -Force
   New-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons" -Name "NewStartPanel" -Force
   New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel" -Name "{59031a47-3f72-44a7-89c5-5595fe6b30ee}" -PropertyType DWord -Value 0 -Force
   New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel" -Name "{20D04FE0-3AEA-1069-A2D8-08002B30309D}" -PropertyType DWord -Value 0 -Force
   New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel" -Name "{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}" -PropertyType DWord -Value 0 -Force
 
+  # Configure registry entries for Regedit favorites
   New-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Applets" -Name "Regedit" -Force
   New-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Applets\Regedit" -Name "Favorites" -Force
   New-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Applets\Regedit\Favorites" -Name "Contexts" -PropertyType String -Value "Computer\HKEY_CURRENT_USER\Software\deviceTRUST\Contexts" -Force
@@ -301,23 +307,33 @@ if (($DomainJoinedServerQuery -eq $false) -and ($OSBuildNumber -ge "14393")) {
   Write-Host " Task: Copy files and create folder(s)"
   Write-Host ""
 
+  # Copy Registry Editor shortcut to the Public Desktop
   Copy-Item -Path "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\Administrative Tools\Registry Editor.lnk" -Destination "$env:SYSTEMDRIVE\Users\Public\Desktop" -Force
+
+  # Copy a wallpaper image to the Windows Wallpaper directory
   Copy-Item -Path "$PathDemoBox\Content\Wallpaper\deviceTRUST_Wallpaper.jpg" -Destination "$env:SYSTEMDRIVE\Windows\Web\Wallpaper" -Force
 
+  # Copy FSLogix configuration files to the FSLogix Rules directory
   Copy-Item -Path "$PathDemoBox\Content\Configuration\FSLogix\*" -Destination "C:\Program Files\FSLogix\Apps\Rules" -Force
 
+  # Create a directory "Demo Tool" on the user's desktop and copy a demo tool executable
   New-Item -ItemType directory -Name "Demo Tool" -Path "$env:USERPROFILE\Desktop\deviceTRUST Demo-Box" -Force
   Copy-Item -Path "$PathDemoBox\Content\Software\deviceTRUST\dtdemotool.exe" -Destination "$env:USERPROFILE\Desktop\deviceTRUST Demo-Box\Demo Tool" -Force
 
+  # Create a directory "Presentation" on the user's desktop and copy presentation files
   New-Item -ItemType directory -Name "Presentation" -Path "$env:USERPROFILE\Desktop\deviceTRUST Demo-Box" -Force
   Copy-Item -Path "$PathDemoBox\Content\Presentation\*" -Destination "$env:USERPROFILE\Desktop\deviceTRUST Demo-Box\Presentation" -Force
 
+  # Create a directory "Links" in the user's Favorites and copy a URL shortcut
   New-Item -ItemType directory -Name "Links" -Path "$env:USERPROFILE\Favorites\" -Force
   Copy-Item -Path "$PathDemoBox\Content\Favorites\Business Web App.url" -Destination "$env:USERPROFILE\Favorites\Links\Business Web App.url" -Force
 
+  # Create a directory "Scripts" on the system drive and copy authorized and unauthorized scripts
   New-Item -ItemType directory -Name "Scripts" -Path "$env:SYSTEMDRIVE\" -Force
   Copy-Item -Path "$PathDemoBox\Content\Scripts\Authorized\*.*" -Destination "$env:SYSTEMDRIVE\Scripts" -Force
   Copy-Item -Path "$PathDemoBox\Content\Scripts\Unauthorized\*.*" -Destination "$env:SYSTEMDRIVE\Users\Default\Downloads" -Force
+
+  # Get the SID of the "SW-Install" local user and use SetACL to set ownership of the Scripts directory
   [string]$SwInstallSid = ((Get-LocalUser "SW-Install").Sid).Value
   Start-Process -FilePath "$PathDemoBox\Content\Software\SetACL-3.1.2\SetACL.exe" -ArgumentList "-on ""$env:SYSTEMDRIVE\Scripts"" -ot file -actn setowner -ownr ""n:$SwInstallSid"" -rec cont_obj" -Wait
 
